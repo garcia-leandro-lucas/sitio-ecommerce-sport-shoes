@@ -1,0 +1,52 @@
+.productos-ecommerce-sport-shoes {
+    main {
+        section.ecommerce-sport-shoes__banner {
+            background-image: url('../../src/assets/images/banner/collection.webp');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 300px;
+        }
+
+        section.ecommerce-sport-shoes__products-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            gap: 10px;
+            margin: 50px auto;
+            justify-content: center;
+            align-items: center;
+            .product-grid {
+                .product-image {
+                    img {
+                        width: 100%;
+                    }
+                    .product-button-link {
+                        margin: auto;
+                        ul {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            align-content: center;
+                            margin: auto;
+                            padding: 0;
+                            li {
+                                list-style: none;
+
+                                i {
+                                    font-size: 25px;
+                                    padding: 10px 15px;
+                                    background-color: #ffffff;
+                                    border-radius: 4px;
+                                    box-shadow: 2px 2px 15px 2px rgb(128 128 128 / 10%);
+                                    margin: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

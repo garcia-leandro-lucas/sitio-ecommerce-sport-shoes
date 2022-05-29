@@ -1,0 +1,17 @@
+.login-ecommerce-sport-shoes {
+    main {
+        section.ecommerce-sport-shoes__banner {
+            background-image: url('../../src/assets/images/banner/collection.webp');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 300px;
+        }
+
+        section.container.ecommerce-sport-shoes__form-login {
+            margin-top: 100px;
+            width: 50%;
+        }
+    }
+}

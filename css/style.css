@@ -1,0 +1,209 @@
+/*  Inicio de fuentes externas  */
+@font-face {
+  font-family: "Fave Condensed One Pro";
+  src: url("../src/assets/fonts/fave-condensed-one-pro/Fave-CondensedOnePro.eot");
+  src: url("../src/assets/fonts/fave-condensed-one-pro/Fave-CondensedOnePro.eot?#iefix") format("embedded-opentype"), url("../src/assets/fonts/fave-condensed-one-pro/Fave-CondensedOnePro.woff2") format("woff2"), url("../src/assets/fonts/fave-condensed-one-pro/Fave-CondensedOnePro.woff") format("woff"), url("../src/assets/fonts/fave-condensed-one-pro/Fave-CondensedOnePro.ttf") format("truetype"), url("../src/assets/fonts/fave-condensed-one-pro/Fave-CondensedOnePro.svg#Fave Condensed One Pro") format("svg");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ombudsman Stencil";
+  src: url("../src/assets/fonts/ombudsman-stencil/OmbudsmanStencil.eot");
+  src: url("../src/assets/fonts/ombudsman-stencil/OmbudsmanStencil.eot?#iefix") format("embedded-opentype"), url("../src/assets/fonts/ombudsman-stencil/OmbudsmanStencil.woff2") format("woff2"), url("../src/assets/fonts/ombudsman-stencil/OmbudsmanStencil.woff") format("woff"), url("../src/assets/fonts/ombudsman-stencil/OmbudsmanStencil.ttf") format("truetype"), url("../src/assets/fonts/ombudsman-stencil/OmbudsmanStencil.svg#Ombudsman Stencil") format("svg");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../src/assets/fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("../src/assets/fonts/roboto/Roboto-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../src/assets/fonts/roboto/Roboto-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Light";
+  src: url("../src/assets/fonts/roboto/Roboto-Light.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Condensed Regular";
+  src: url("../src/assets/fonts/roboto/RobotoCondensed-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Condensed Bold";
+  src: url("../src/assets/fonts/roboto/RobotoCondensed-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+/*  Fin de fuentes externas  */
+:root {
+  scroll-behavior: smooth;
+  /*  Medidas  */
+  --medida-raiz: 62.5%;
+  --swiper-navigation-size: 20px;
+  /*  Fin de Medidas  */
+  /* Colores */
+  --color-blanco: #ffffff;
+  --color-gris-opacidad: hsla(0, 0%, 0%, 0.5);
+  --color-gris-opacidad-15: hsla(0, 0%, 0%, 0.15);
+  --color-gris-medio: hsla(0, 0%, 73%, 1);
+  --color-gris-bajo: hsla(0, 0%, 96%, 1);
+  --color-negro: #000000;
+  --color-rojo-coorporativo: #ff0024;
+  --color-rojo: #ff0000;
+  --color-violeta: #a402b3;
+  --color-violeta-medio: #7c0087;
+  --color-bordo: #7b0325;
+  --color-bordo-medio: #d00202;
+  --color-amarillo: #fbb900;
+  --color-amarillo-medio: #e3a72b;
+  --color-amarillo-opacidad: hsla(44, 100%, 49%, 0.3);
+  --color-transparente: hsla(360, 100%, 100%, 0);
+  --color-fucsia: #f101ff;
+  --color-azul: #0076fb;
+  --color-azul-fuerte: #0029fb;
+  --color-verde-check: #00CB00;
+  --color-rojo-error: #F90000;
+  --color-amarillo-star:#ffec51;
+  /* Fin de Colores */
+  /*  Fuentes  */
+  --fuente-fave-condensed: Fave Condensed One Pro;
+  --fuente-ombudsman-stencil: Ombudsman Stencil;
+  --fuente-roboto-regular: Roboto Regular;
+  --fuente-roboto-medium: Roboto Medium;
+  --fuente-roboto-bold: Roboto Bold;
+  --fuente-roboto-light: Roboto Light;
+  --fuente-roboto-condensed-regular: Roboto Condensed Regular;
+  --fuente-roboto-condensed-bold: Roboto Condensed Bold;
+  /*  Fin de Fuentes  */
+}
+
+/* 2 */
+/* 1 */
+/*
+* Inicio Generales
+*
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+* Fin Generales
+*
+*/
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/**/
+header .navbar.navbar-expand-lg .container .navbar-brand img.logo {
+  width: 10rem;
+}
+header .navbar.navbar-expand-lg .container .navbar-collapse.collapse ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+  margin: auto;
+}
+header .navbar.navbar-expand-lg .container .navbar-collapse.collapse form.d-flex button.btn:hover {
+  border-color: rgba(128, 128, 128, 0.1);
+  box-shadow: 2px 2px 15px 2px rgba(128, 128, 128, 0.1019607843);
+}
+header .navbar.navbar-expand-lg .container .navbar-collapse.collapse form.d-flex button.btn i {
+  font-size: 1.5em;
+}
+
+/**/
+.index-ecommerce-sport-shoes .ecommerce-sport-shoes__grid-images {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 300px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+}
+.index-ecommerce-sport-shoes .ecommerce-sport-shoes__grid-images .grid-image {
+  overflow: hidden;
+}
+
+.login-ecommerce-sport-shoes main section.ecommerce-sport-shoes__banner {
+  background-image: url("../../src/assets/images/banner/collection.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 300px;
+}
+.login-ecommerce-sport-shoes main section.container.ecommerce-sport-shoes__form-login {
+  margin-top: 100px;
+  width: 50%;
+}
+
+/*
+ * #######################
+ * #######################
+ * #######################
+ * Inicio de Media Queries
+ * #######################
+ * #######################
+ * #######################
+*/
+/* Mobile Styles */
+/* Tablet Styles */
+/* Desktop Styles */
+/*
+ * #######################
+ * #######################
+ * #######################
+ *   Fin de Media Queries
+ * #######################
+ * #######################
+ * #######################
+*/
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,202 @@
+/*  Inicio de fuentes externas  */
+@font-face {
+    font-family: 'Fave Condensed One Pro';
+    src: url('../src/assets/fonts/fave-condensed-one-pro/Fave-CondensedOnePro.eot');
+    src: url('../src/assets/fonts/fave-condensed-one-pro/Fave-CondensedOnePro.eot?#iefix') format('embedded-opentype'),
+        url('../src/assets/fonts/fave-condensed-one-pro/Fave-CondensedOnePro.woff2') format('woff2'),
+        url('../src/assets/fonts/fave-condensed-one-pro/Fave-CondensedOnePro.woff') format('woff'),
+        url('../src/assets/fonts/fave-condensed-one-pro/Fave-CondensedOnePro.ttf') format('truetype'),
+        url('../src/assets/fonts/fave-condensed-one-pro/Fave-CondensedOnePro.svg#Fave Condensed One Pro') format('svg');
+
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ombudsman Stencil';
+    src: url('../src/assets/fonts/ombudsman-stencil/OmbudsmanStencil.eot');
+    src: url('../src/assets/fonts/ombudsman-stencil/OmbudsmanStencil.eot?#iefix') format('embedded-opentype'),
+        url('../src/assets/fonts/ombudsman-stencil/OmbudsmanStencil.woff2') format('woff2'),
+        url('../src/assets/fonts/ombudsman-stencil/OmbudsmanStencil.woff') format('woff'),
+        url('../src/assets/fonts/ombudsman-stencil/OmbudsmanStencil.ttf') format('truetype'),
+        url('../src/assets/fonts/ombudsman-stencil/OmbudsmanStencil.svg#Ombudsman Stencil') format('svg');
+
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../src/assets/fonts/roboto/Roboto-Regular.ttf') format('truetype');
+
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('../src/assets/fonts/roboto/Roboto-Medium.ttf') format('truetype');
+
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('../src/assets/fonts/roboto/Roboto-Bold.ttf') format('truetype');
+
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('../src/assets/fonts/roboto/Roboto-Light.ttf') format('truetype');
+
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed Regular';
+    src: url('../src/assets/fonts/roboto/RobotoCondensed-Regular.ttf') format('truetype');
+
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed Bold';
+    src: url('../src/assets/fonts/roboto/RobotoCondensed-Bold.ttf') format('truetype');
+
+    font-display: swap;
+}
+
+/*  Fin de fuentes externas  */
+
+:root {
+    scroll-behavior: smooth;
+    /*  Medidas  */
+    --medida-raiz: 62.5%;
+    --swiper-navigation-size: 20px;
+    /*  Fin de Medidas  */
+
+    /* Colores */
+    --color-blanco: #ffffff;
+    --color-gris-opacidad: hsla(0, 0%, 0%, 0.5);
+    --color-gris-opacidad-15: hsla(0, 0%, 0%, 0.15);
+    --color-gris-medio: hsla(0, 0%, 73%, 1);
+    --color-gris-bajo: hsla(0, 0%, 96%, 1);
+    --color-negro: #000000;
+    --color-rojo-coorporativo: #ff0024;
+    --color-rojo: #ff0000;
+    --color-violeta: #a402b3;
+    --color-violeta-medio: #7c0087;
+    --color-bordo: #7b0325;
+    --color-bordo-medio: #d00202;
+    --color-amarillo: #fbb900;
+    --color-amarillo-medio: #e3a72b;
+    --color-amarillo-opacidad: hsla(44, 100%, 49%, 0.3);
+    --color-transparente: hsla(360, 100%, 100%, 0);
+    --color-fucsia: #f101ff;
+    --color-azul: #0076fb;
+    --color-azul-fuerte: #0029fb;
+    --color-verde-check: #00CB00;
+    --color-rojo-error: #F90000;
+    --color-amarillo-star:#ffec51;
+    /* Fin de Colores */
+
+    /*  Fuentes  */
+    --fuente-fave-condensed: Fave Condensed One Pro;
+    --fuente-ombudsman-stencil: Ombudsman Stencil;
+    --fuente-roboto-regular: Roboto Regular;
+    --fuente-roboto-medium: Roboto Medium;
+    --fuente-roboto-bold: Roboto Bold;
+    --fuente-roboto-light: Roboto Light;
+    --fuente-roboto-condensed-regular: Roboto Condensed Regular;
+    --fuente-roboto-condensed-bold: Roboto Condensed Bold;
+    /*  Fin de Fuentes  */
+}
+
+$grid-breakpoints: (
+    mobile-a: 360px,
+    tablet-a: 361px,
+    tablet-b: 767px,
+    tablet-c: 768px,
+    tablet-d: 1060px,
+    desktop: 1061px
+ );
+
+@mixin break-point-tablet($breakpoints) {
+    @media screen and (max-width: map-get($grid-breakpoints, $breakpoints)){ 
+        @content;
+    }
+}
+
+$colores:
+    #ffffff, /* 1 */
+    #000000; /* 2 */
+
+$fuentes:
+    Roboto Regular; /* 1 */
+
+@mixin sizes-w($width){
+    width: $width;
+}
+
+@mixin sizes-w-h($width,$height){
+    width: $width;
+    height: $height;
+}
+
+@mixin btn-descargar ($width, $padding, $display, $justify-content, $border-radius) {
+    width: $width;
+    padding: $padding;
+    display: $display;
+    justify-content: $justify-content;
+    border-radius: $border-radius;
+}
+
+@mixin margin-t-b($margin-top, $margin-bottom){
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+}
+
+@mixin margin($margin){
+    margin: $margin;
+}
+
+@mixin padding($padding){
+    padding: $padding;
+}
+
+%btn {
+    border-radius: 200px;
+    color: nth($colores, 1);
+    display: flex;
+    justify-content: center;
+    line-height: 1;
+}
+
+%bg-image{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+$btn-footer-desaphilip: (
+
+    bg-color-rojo-invitar-amigos:var(--color-rojo),
+    bg-color-violeta-descubri:var(--color-violeta),
+
+    bg-bordo-medio-invitar-amigos:var(--color-bordo-medio),
+    bg-violeta-medio-descubri:var(--color-violeta-medio),
+
+    transition: all 0.5s
+);
+
+
+
+
+
+
+
+
+
+
+
+

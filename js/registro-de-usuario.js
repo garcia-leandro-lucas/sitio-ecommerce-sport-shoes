@@ -1,4 +1,5 @@
 /* Login de Usuario para el registro a la página */
+
 //let registro_de_usuario = confirm("Desea registrarse en nuestro sitio");
 let nombre = document.getElementById('validacionName');
 let apellido = document.getElementById('validacionApellido');

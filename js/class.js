@@ -20,8 +20,8 @@ class Usuario {
 }
 /* Fin de Constructor de Usuarios */
 
-let usuario1 = new Usuario("Leandro", "García", "34 983 639");
-console.log(usuario1);
+// let usuario1 = new Usuario("Leandro", "García", "34 983 639");
+// console.log(usuario1);
 
 /* Inicio Constructor de Productos */
 class Producto {
@@ -57,5 +57,5 @@ class Producto {
 }
 /* Inicio Constructor de Productos */
 
-const producto = new Producto("1","Nike","Este es un titulo","Esta es una descripcion corta","Esta es una descripcion larga","20000","running","Hombre","44", "negro");
-console.log(producto);
+// const producto = new Producto("1","Nike","Este es un titulo","Esta es una descripcion corta","Esta es una descripcion larga","20000","running","Hombre","44", "negro");
+// console.log(producto);

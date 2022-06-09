@@ -13,7 +13,8 @@ let confirmacion_de_contrasenia = document.getElementById('validacionConfirmacio
 
 let enviar_validacio_de_registro = document.getElementById('enviarValidacionDeRegistro');
 
-enviar_validacio_de_registro.addEventListener('click', () => {
+enviar_validacio_de_registro.addEventListener('click', () => {// aca conviene colocar el evento submit?
+    //e.preventDefault();
     
     if ( es_valido_dato(nombre.value) && es_valido_dato(apellido.value) && es_valido_dato(dni.value) && es_valido_dato(localidad.value) && es_valido_dato(fecha_de_nacimiento.value) && es_valido_dato(genero.value) && es_valido_dato(email.value) && es_valido_dato(contrasenia.value) && es_valido_dato(confirmacion_de_contrasenia.value)) {
             
@@ -22,9 +23,11 @@ enviar_validacio_de_registro.addEventListener('click', () => {
 
         let nuevo_usuario = new Usuario(nombre.value, apellido.value, dni.value, localidad.value, fecha_de_nacimiento.value, genero.value, email.value, contrasenia.value, confirmacion_de_contrasenia.value);
 
+        guardar_usuario(nuevo_usuario);
+
         let validacion_de_datos_usuario = mensaje_de_confirmacion(nuevo_usuario);
         let check = true;
-        console.log("Estoy antes de while check");
+        //console.log("Estoy antes de while check");
     
         while(check){
             console.log("Estoy dentro de while check");
@@ -146,4 +149,28 @@ function pedido_de_contraseña(contrasenia, confirmacion_de_contrasenia) {
         contrasenia = prompt("Ingrese su contraseña:");
         confirmacion_de_contrasenia = prompt("Ingrese nuevamente su contraseña:");
     }
+}
+
+
+function guardar_usuario(usuario_nuevo) {
+
+    let usuario = localStorage.getItem("listasDeUsuarios");
+
+    if (usuario){
+
+        let usuarioAlmacenados = JSON.parse(localStorage.getItem("listasDeUsuarios"));
+        usuarioAlmacenados.push(usuario_nuevo);
+
+        let usuarioAlmacenadosString = JSON.stringify(usuarioAlmacenados);
+        localStorage.setItem("listasDeUsuarios",usuarioAlmacenadosString);
+
+    }else{
+
+        let usuarioAlmacenados = new Array();
+        usuarioAlmacenados.push(usuario_nuevo);
+        let usuarioAlmacenadosString = JSON.stringify(usuarioAlmacenados);
+        localStorage.setItem("listasDeUsuarios",usuarioAlmacenadosString);
+
+
+  }
 }

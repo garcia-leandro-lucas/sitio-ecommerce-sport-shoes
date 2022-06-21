@@ -1,0 +1,42 @@
+
+[
+    {
+        "id": 1,
+        "marca": "Nike",
+        "titulo": "Zapatillas Nike Run Swift 2",
+        "descripcion_corta":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_corta.",
+        "descripcion_larga":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_larga.",
+        "precio": 14999,
+        "categoria":"Urbano",
+        "genero": "Unisex",
+        "talle": [40, 41, 42, 43, 44, 45],
+        "color": ["Negro", "Blanco", "Azul"],
+        "imagen": "/src/assets/images/productos/cloudaway-sneaker.webp"
+    },
+    {
+        "id": 2,
+        "marca": "Nike",
+        "titulo": "Zapatillas NIKE MD Runner 2",
+        "descripcion_corta":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_corta.",
+        "descripcion_larga":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_larga.",
+        "precio": 45999,
+        "categoria":"Running",
+        "genero": "Unisex",
+        "talle": [40, 41, 42, 43, 44, 45],
+        "color": ["Negro", "Blanco", "Azul"],
+        "imagen": "/src/assets/images/productos/gel-lyte-og.webp"
+    },
+    {
+        "id": 3,
+        "marca": "Nike",
+        "titulo": "Zapatillas Nike Air Max Bella Tr 2",
+        "descripcion_corta":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_corta.",
+        "descripcion_larga":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_larga.",
+        "precio": 82999,
+        "categoria":"Training",
+        "genero": "Unisex",
+        "talle": [40, 41, 42, 43, 44, 45],
+        "color": ["Gris", "Turquesa ", "Azul"],
+        "imagen": "/src/assets/images/productos/cloudaway.webp"
+    }
+]

@@ -14,8 +14,6 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/2027f4984e.js" crossorigin="anonymous"></script>
-        <!-- CDN sweetalert -->
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <!-- Icons CDN bootstrap -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
         <!-- Css -->
@@ -33,7 +31,7 @@
         
         <title>Sitio Oficial | Venta de calzados deportivos</title>
     </head>
-    <body class="login-ecommerce-sport-shoes">
+    <body class="productos-ecommerce-sport-shoes">
         <header>
           <nav class="navbar navbar-expand-lg">
             <div class="container">
@@ -78,73 +76,24 @@
         </header>
         <main>
           <section class="ecommerce-sport-shoes__banner">
-            <div class="banner-image">
-                
-            </div>
           </section>
-
-          <section class="container ecommerce-sport-shoes__form-login__ckeck">
-            <h1 class="form-login__title">Por favor verifica que todos los datos esten correctos.</h1>
-            <form id="form-login__ckeck">
-              <div class="mb-3">
-                    <label for="validationCustom01" class="form-label">Nombre</label>
-                    <hr>
-                    <div class="content-edit-date">
-                        <p id="nombre"></p>
-                        <button type="button" class="btn btn-primary" id="edit-date"><i class="bi bi-pencil-square"></i></button>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="validationCustom02" class="form-label">Apellido</label>
-                    <hr>
-                    <div class="content-edit-date">
-                        <p id="apellido"></p>
-                        <button type="button" class="btn btn-primary" id="edit-date"><i class="bi bi-pencil-square"></i></button>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="validationCustom02" class="form-label">D.N.I.</label>
-                    <hr>
-                    <div class="content-edit-date">
-                        <p id="dni"></p>
-                        <button type="button" class="btn btn-primary" id="edit-date"><i class="bi bi-pencil-square"></i></button>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="validationCustom02" class="form-label">Localidad</label>
-                    <hr>
-                    <div class="content-edit-date">
-                        <p id="localidad"></p>
-                        <button type="button" class="btn btn-primary" id="edit-date"><i class="bi bi-pencil-square"></i></button>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="validationCustom02" class="form-label">Fecha de nacimiento</label>
-                    <hr>
-                    <div class="content-edit-date">
-                      <p id="fecha-de-nacimiento"></p>
-                      <button type="button" class="btn btn-primary" id="edit-date"><i class="bi bi-pencil-square"></i></button>
-                  </div>
-                </div>
-                <div class="mb-3">
-                    <label for="validationCustom04" class="form-label">Género</label>
-                    <hr>
-                    <div class="content-edit-date">
-                        <p id="genero"></p>
-                        <button type="button" class="btn btn-primary" id="edit-date"><i class="bi bi-pencil-square"></i></button>
-                    </div>
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <hr>
-                    <div class="content-edit-date">
-                        <p id="email"></p>
-                        <button type="button" class="btn btn-primary" id="edit-date"><i class="bi bi-pencil-square"></i></button>
-                    </div>
-                </div>
-                <button type="button" class="btn btn-primary" id="enviarConfirmacionDeRegistro">Confirmar</button>
-              </form>
-          </section>
+          <section class="container ecommerce-sport-shoes__products-grid" id="ecommerce-sport-shoes__products-table-carrito">
+            <table class="table   ">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+            
+          </section>              
         </main>
         <footer>
         
@@ -163,19 +112,17 @@
         <!-- Inicialización de AOS -->
         <script>AOS.init();</script>
 
-       <!-- Inicio de Script -->
+            <!-- Inicio de Script -->
        <script src="../../js/class.js"></script>
        <script src="../../js/variables.js"></script>
        <script src="../../js/function.js"></script>
-       <script src="../../js/productos.js"></script>
+       <script src="../../js/productos.json"></script>
        <script src="../../js/registro-de-usuario.js"></script>
        <script src="../../js/registro-check.js"></script>
        <script src="../../js/carga_de_productos.js"></script>
+       <script src="../../js/carrito.js"></script>
 
        <!-- Fin de Script -->
-
     </body>
+    
 </html>
-
-
-

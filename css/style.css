@@ -193,6 +193,9 @@ header .navbar.navbar-expand-lg .container .navbar-collapse.collapse form.d-flex
   display: flex;
   justify-content: space-between; }
 
+img.image-carrito {
+  width: 100px; }
+
 /*
  * #######################
  * #######################

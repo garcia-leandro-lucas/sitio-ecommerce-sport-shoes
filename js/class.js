@@ -24,20 +24,24 @@ class Usuario {
 // console.log(usuario1);
 
 /* Inicio Constructor de Productos */
+
+//const producto = new Producto(id_del_producto,image_del_producto, nombre_del_producto,precio_del_producto );
 class Producto {
-	constructor(id, marca, titulo, descripcion_corta, descripcion_larga, precio, categoria, genero, talle, color, imagen) {
-		this.id = -1;
-		this.marca = marca;
-		this.titulo = titulo;
-		this.descripcion_corta = descripcion_corta;
-		this.descripcion_larga = descripcion_larga;
-		this.precio = parseFloat(precio);
-		this.categoria = categoria;
-		this.genero = genero;
-		this.talle = talle;
-		this.color = color;
+	constructor(id, imagen, titulo, precio, cantidad, subtotal) {
+		this.id = id;
 		this.imagen = imagen;
-		this.vendido = false;
+		this.titulo = titulo;
+		this.precio = precio;
+		this.cantidad = 1;
+		this.subtotal = precio;
+		// this.marca = marca;
+		// this.descripcion_corta = descripcion_corta;
+		// this.descripcion_larga = descripcion_larga;
+		// this.categoria = categoria;
+		// this.genero = genero;
+		// this.talle = talle;
+		// this.color = color;
+		// this.vendido = false;
 	}
 
 	/* Retorna la descripción de las propiedades del los productos */

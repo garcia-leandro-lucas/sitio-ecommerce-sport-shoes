@@ -125,10 +125,29 @@ header .navbar.navbar-expand-lg .container .navbar-brand img.logo {
   width: 10rem; }
 header .navbar.navbar-expand-lg .container .navbar-collapse.collapse ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
   margin: auto; }
-header .navbar.navbar-expand-lg .container .navbar-collapse.collapse form.d-flex button.btn:hover {
-  box-shadow: 2px 2px 15px 2px #8080801a; }
-header .navbar.navbar-expand-lg .container .navbar-collapse.collapse form.d-flex button.btn i {
-  font-size: 1.5em; }
+header .navbar.navbar-expand-lg .container .navbar-collapse.collapse form.d-flex a:hover {
+  color: black;
+  transition: all 0.5s; }
+header .navbar.navbar-expand-lg .container .navbar-collapse.collapse form.d-flex a div.btn {
+  position: relative;
+  display: flex;
+  flex-flow: row-reverse; }
+  header .navbar.navbar-expand-lg .container .navbar-collapse.collapse form.d-flex a div.btn:hover {
+    border-color: #6c6c6c12;
+    box-shadow: 2px 2px 15px 2px #8080801a;
+    transition: all 0.5s; }
+  header .navbar.navbar-expand-lg .container .navbar-collapse.collapse form.d-flex a div.btn p.carrito-cantidad span.carrito-cantidad__numero {
+    background-color: red;
+    border-radius: 100px;
+    width: 25px;
+    padding: 3px;
+    position: absolute;
+    right: -10px;
+    top: 0;
+    font-size: 12px;
+    color: white; }
+  header .navbar.navbar-expand-lg .container .navbar-collapse.collapse form.d-flex a div.btn i {
+    font-size: 1.5em; }
 
 /**/
 .index-ecommerce-sport-shoes .ecommerce-sport-shoes__grid-images {
@@ -195,6 +214,27 @@ header .navbar.navbar-expand-lg .container .navbar-collapse.collapse form.d-flex
 
 img.image-carrito {
   width: 100px; }
+
+.container.ecommerce-sport-shoes__products-carrito {
+  display: flex;
+  flex-direction: column; }
+  .container.ecommerce-sport-shoes__products-carrito div#btnComprar {
+    display: flex;
+    justify-content: flex-end; }
+
+.toastify.on.mensaje-se-agrego-exitosamente.toastify-right.toastify-top {
+  background: green; }
+  .toastify.on.mensaje-se-agrego-exitosamente.toastify-right.toastify-top span.toast-close {
+    padding-left: 25px;
+    color: white !important;
+    opacity: 1; }
+
+.toastify.on.mensaje-se-elimino-exitosamente.toastify-right.toastify-top {
+  background: red; }
+  .toastify.on.mensaje-se-elimino-exitosamente.toastify-right.toastify-top span.toast-close {
+    padding-left: 25px;
+    color: white !important;
+    opacity: 1; }
 
 /*
  * #######################

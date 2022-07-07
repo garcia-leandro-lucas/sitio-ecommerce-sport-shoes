@@ -16,6 +16,8 @@
         <script src="https://kit.fontawesome.com/2027f4984e.js" crossorigin="anonymous"></script>
         <!-- Icons CDN bootstrap -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <!-- CDN toastify -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
         <!-- Css -->
         <link rel="stylesheet" type="text/css" href="../../css/style.css">
         <!-- Meta description -->
@@ -65,10 +67,30 @@
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search" id="buscador">
-                  <button class="btn" type="submit"><i class="bi bi-search"></i></button>
-                  <button class="btn" type="submit"><i class="bi bi-person"></i></button>
-                  <button class="btn" type="submit"><i class="bi bi-heart"></i></button>
-                  <button class="btn" type="submit"><i class="bi bi-bag"></i></button>
+                  <a href="" >
+                    <div class="btn">
+                      <p id=""></p>
+                      <i class="bi bi-search"></i>
+                    </div>
+                  </a>
+                  <a href="" >
+                    <div class="btn">
+                      <p id=""></p>
+                      <i class="bi bi-person"></i>
+                    </div>
+                  </a>
+                  <a href="" >
+                    <div class="btn">
+                      <p id=""></p>
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </a>
+                  <a href="carrito.html" >
+                    <div class="btn">
+                      <p class="carrito-cantidad"></p>
+                      <i class="bi bi-bag"></i>
+                    </div>
+                  </a>
                 </form>
               </div>
             </div>
@@ -77,8 +99,8 @@
         <main>
           <section class="ecommerce-sport-shoes__banner">
           </section>
-          <section class="container ecommerce-sport-shoes__products-grid" id="ecommerce-sport-shoes__products-table-carrito">
-            <table class="table   ">
+          <section class="container ecommerce-sport-shoes__products-carrito" id="ecommerce-sport-shoes__products-table-carrito">
+            <table class="table">
                 <thead>
                     <tr>
                         <th>Id</th>
@@ -87,12 +109,16 @@
                         <th>Precio</th>
                         <th>Cantidad</th>
                         <th>Subtotal</th>
-                        <th></th>
+                        <th>Total</th>
                     </tr>
                 </thead>
-                <tbody id="tbody"></tbody>
+                <tbody id="tbody">
+                  
+                </tbody>
             </table>
-            
+            <div id="btnComprar">
+                  
+            </div>
           </section>              
         </main>
         <footer>
@@ -108,19 +134,25 @@
         
         <!-- script AOS -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- CDN sweetalert -->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <!-- CDN toastify -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
         
         <!-- Inicialización de AOS -->
         <script>AOS.init();</script>
 
-            <!-- Inicio de Script -->
-       <script src="../../js/class.js"></script>
+        <!-- Inicio de Script -->
+        <script src="../../js/class.js"></script>
        <script src="../../js/variables.js"></script>
        <script src="../../js/function.js"></script>
        <script src="../../js/productos.json"></script>
        <script src="../../js/registro-de-usuario.js"></script>
        <script src="../../js/registro-check.js"></script>
        <script src="../../js/carga_de_productos.js"></script>
-       <script src="../../js/carrito.js"></script>
+        <script src="../../js/carrito.js"></script>
 
        <!-- Fin de Script -->
     </body>

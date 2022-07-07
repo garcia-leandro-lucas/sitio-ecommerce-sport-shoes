@@ -2,6 +2,7 @@ const PRODUCTOS_GRID = document.getElementById('ecommerce-sport-shoes__products-
 const URL_PRODUCTOS = '/js/productos.json';
 let carritoDeCompra = [];
 
+const cargarProductos = () => {
     fetch(URL_PRODUCTOS)
     .then((res) => res.json())
     .then ((data) => {
@@ -49,62 +50,80 @@ let carritoDeCompra = [];
             }
             
     })
+}
 
+cargarProductos();
+    
 
+/*
+ * Añade al carrito el producto seleccionado y lo guarda en el localStorage
+*/
+function anadirCarrito(e) {
 
-    function anadirCarrito(e) {
+    mensajeSeAgregoExitosamente();
 
-        let carritoLocalStorage = JSON.parse(localStorage.getItem("carritoDeCompra"));
-        //console.log(carritoLocalStorage);
+    let carritoLocalStorage = JSON.parse(localStorage.getItem("carritoDeCompra"));
 
-        if(carritoLocalStorage) {
-            carritoDeCompra = carritoLocalStorage;
-        }
-
-        //console.log(carritoDeCompra[1]);
-        //console.log(e.target.parentNode.children[0].children[0].alt);
-
-        let indexCarrito = carritoDeCompra.findIndex(producto => producto.id == e.target.parentNode.children[0].children[0].alt);
-
-        console.log(indexCarrito);
-        console.log(carritoDeCompra);
-
-        //console.log(e.target.parentNode.children[0].children[0].alt);
-        //console.log(e.target.parentNode.children[1].children[1].children[0].innerText);
-        let id_del_producto = e.target.parentNode.children[0].children[0].alt;
-        let image_del_producto = e.target.parentNode.children[0].children[0].src;
-        let nombre_del_producto = e.target.parentNode.children[1].children[0].innerText;
-        let precio_del_producto = e.target.parentNode.children[1].children[1].children[0].innerText;
-
-        if(indexCarrito === -1) {
-            const producto = new Producto(id_del_producto,image_del_producto, nombre_del_producto, precio_del_producto );
-            carritoDeCompra.push(producto);
-        }else {
-            carritoDeCompra[indexCarrito].cantidad++;
-            carritoDeCompra[indexCarrito].subtotal = carritoDeCompra[indexCarrito].precio * carritoDeCompra[indexCarrito].cantidad;
-        }
-        
-        //console.log(carritoDeCompra);
-
-        localStorage.setItem("carritoDeCompra", JSON.stringify(carritoDeCompra));
-        carritoDeNavegacion(carritoDeCompra);
+    if(carritoLocalStorage) {
+        carritoDeCompra = carritoLocalStorage;
     }
 
+    let indexCarrito = carritoDeCompra.findIndex(producto => producto.id == e.target.parentNode.children[0].children[0].alt);
 
-    function carritoDeNavegacion(carritoDeCompra) {
+    console.log(indexCarrito);
+    console.log(carritoDeCompra);
 
-        let carritoCantidad = document.getElementById('carrito-cantidad');
-        let totalProductos = 0;
+    let id_del_producto = e.target.parentNode.children[0].children[0].alt;
+    let image_del_producto = e.target.parentNode.children[0].children[0].src;
+    let nombre_del_producto = e.target.parentNode.children[1].children[0].innerText;
+    let precio_del_producto = e.target.parentNode.children[1].children[1].children[0].innerText;
 
-        for( let producto of carritoDeCompra ) {
-            totalProductos += producto.cantidad;
-        }
+    if(indexCarrito === -1) {
+        const producto = new Producto(id_del_producto,image_del_producto, nombre_del_producto, precio_del_producto );
+        carritoDeCompra.push(producto);
+    }else {
+        carritoDeCompra[indexCarrito].cantidad++;
+        carritoDeCompra[indexCarrito].subtotal = carritoDeCompra[indexCarrito].precio * carritoDeCompra[indexCarrito].cantidad;
+    }
 
+    localStorage.setItem("carritoDeCompra", JSON.stringify(carritoDeCompra));
+    carritoDeNavegacion(carritoDeCompra);
+    }
+
+/*
+ * Se genera un contador en el icono del carrito del header
+*/
+function carritoDeNavegacion(carritoDeCompra) {
+
+    let carritoCantidad = document.querySelector('.carrito-cantidad');
+    let totalProductos = 0;
+
+    for( let producto of carritoDeCompra ) {
+        totalProductos += producto.cantidad;
+    }
+
+    if(totalProductos > 0) {
         carritoCantidad.innerHTML = "";
         carritoCantidad.innerHTML = `
         <span class="carrito-cantidad__numero">${totalProductos}</span>
         `;
     }
+}
 
 
+/*
+ * Mensaje por Toastify de que se Agrego un producto al carrito correctamente
+*/
+const mensajeSeAgregoExitosamente = () => {
+        
+        Toastify({
+            text: "Producto agregado con exito!",
+            destination: "/src/views/carrito.html",
+            className: "mensaje-se-agrego-exitosamente",
+            close: true,
+            gravity: "bottom",
+            duration: 30000
+            }).showToast();
+
+}
     

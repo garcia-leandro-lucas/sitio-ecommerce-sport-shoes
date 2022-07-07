@@ -1,31 +1,40 @@
 const carrito = JSON.parse(localStorage.getItem("carritoDeCompra"));
-console.log(carrito);
+//console.log(carrito);
+carritoDeNavegacion(carrito);
 
 let tbody = document.querySelector('#tbody');
+let btnComprar = document.querySelector('#btnComprar');
+
 
 function cargarCarrito(arrayCarritoDeProductos) {
 
     for( let producto of arrayCarritoDeProductos ) {
 
-        let row = document.createElement('tr');
-        row.innerHTML = `
+        let tbodyRow = document.createElement('tr');
+
+        tbodyRow.innerHTML = `
             <th>${producto.id}</th>
             <th><img class="image-carrito" src="${producto.imagen}" alt="${producto.id}"></th>
             <th>${producto.titulo}</th>
             <th>$${producto.precio}</th>
-            <th><input type="number" class="cantidad-de-productos" value="1"></th>
+            <th><input type="number" class="cantidad-de-productos" value=${producto.cantidad}></th>
             <th>${producto.subtotal}</th>
             <th><button class="btn-eliminar" id="${producto.id}"><i class="bi bi-trash-fill"></i></button></th>
-
         `;
-        tbody.appendChild(row);
 
-        console.log(producto.id);
+        tbody.appendChild(tbodyRow);
+        
     }
 
+    let btnDiv = document.createElement('div');
+    btnDiv.innerHTML = `
+        <button class="btn btn-primary" id="comprar">Comprar</button>
+    `;
+    btnComprar.appendChild(btnDiv);
 }
-//<th>${producto.cantidad}</th>
+
 cargarCarrito(carrito);
+
 
 let btnEliminar = document.querySelectorAll('.btn-eliminar');
 
@@ -33,13 +42,32 @@ btnEliminar.forEach(elemento => {
     elemento.addEventListener("click", eliminarProducto);
 });
 
+
+btnComprar.addEventListener('click',comprarProducto);
+
+function comprarProducto(e) {
+    console.log(e.target);
+    //console.log(e.target.parentNode.parentNode);
+    (e.target.parentNode.parentNode.parentNode.children[0].children[1]).remove();
+    e.target.parentNode.parentNode.remove();
+    mensajeSeRealizoLaCompraExitosamente();
+    carritoDeNavegacion(carrito);
+    localStorage.clear();
+    setTimeout(function(){
+        window.location.href = "/index.html";   
+    }, 2000);
+}
+
 function eliminarProducto(e) {
-    //console.log(e.target.parentNode.id);
+    mensajeSeEliminoExitosamente();
+    console.log(e.target.parentNode.id);
     let indexCarrito = carrito.findIndex(producto => producto.id == e.target.parentNode.id);
     //console.log(indexCarrito);
     carrito.splice(indexCarrito, 1);
-    //console.log(e.target.parentNode.parentNode.parentNode);
+    //console.log("Este es un: " + e.target.parentNode);
     e.target.parentNode.parentNode.parentNode.remove();
+    carritoDeNavegacion(carrito);
+
     localStorage.setItem("carritoDeCompra", JSON.stringify(carrito));
 }
 
@@ -47,6 +75,9 @@ let cantidadDeProductos = document.querySelectorAll('.cantidad-de-productos');
 cantidadDeProductos.forEach(elemento => {
     elemento.addEventListener("change", cambiaLaCantidadDeProductos);
 });
+
+//implementar un id dentro del input, capturar el valor
+//
 
 
 function cambiaLaCantidadDeProductos(e) {
@@ -62,11 +93,32 @@ function cambiaLaCantidadDeProductos(e) {
         carrito[indexCarrito].subtotal = carrito[indexCarrito].precio * carrito[indexCarrito].cantidad;
         console.log(carrito[indexCarrito].subtotal);
     }
+}
+
+/*
+ * Mensaje por Toastify de que se elimino el producto Correctamente
+*/
+function mensajeSeEliminoExitosamente() {
+
+    Toastify({
+        text: "Producto Elimino con exito!",
+        destination: "/src/views/carrito.html",
+        className: "mensaje-se-elimino-exitosamente",
+        close: true,
+        duration: 30000
+    }).showToast();
 
 }
 
-
-
+function mensajeSeRealizoLaCompraExitosamente() {
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Tu compra se realizo con exito!!',
+        showConfirmButton: false,
+        timer: 1500
+      })
+}
 
 
 

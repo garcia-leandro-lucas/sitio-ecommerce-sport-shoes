@@ -1,0 +1,19 @@
+.toastify.on.mensaje-se-agrego-exitosamente.toastify-right.toastify-top {
+    background: green;
+
+    span.toast-close {
+        padding-left: 25px;
+        color: white !important;
+        opacity: 1;
+    }
+}
+
+.toastify.on.mensaje-se-elimino-exitosamente.toastify-right.toastify-top {
+    background: red;
+
+    span.toast-close {
+        padding-left: 25px;
+        color: white !important;
+        opacity: 1;
+    }
+}

@@ -64,13 +64,39 @@ header {
                     margin: auto;
                 }
                 form.d-flex {
-                    button.btn {
+                    a {
                         &:hover {
-                            //border-color: rgb(128 128 128 / 10%);
-                            box-shadow: 2px 2px 15px 2px #8080801a;
+                            color: black;
+                            transition: all 0.5s;
                         }
-                        i {
-                            font-size: 1.5em;
+
+                        div.btn {
+                            position: relative;
+                            display: flex;
+                            flex-flow: row-reverse;
+
+                            &:hover {
+                                border-color: #6c6c6c12;
+                                box-shadow: 2px 2px 15px 2px #8080801a;
+                                transition: all 0.5s;
+                            }
+
+                            p.carrito-cantidad {
+                                span.carrito-cantidad__numero {
+                                    background-color: red;
+                                    border-radius: 100px;
+                                    width: 25px;
+                                    padding: 3px;
+                                    position: absolute;
+                                    right: -10px;
+                                    top: 0;
+                                    font-size: 12px;
+                                    color: white;
+                                }
+                            }
+                            i {
+                                font-size: 1.5em;
+                            }
                         }
                     }
                 }

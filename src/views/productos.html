@@ -18,6 +18,8 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
         <!-- Css -->
         <link rel="stylesheet" type="text/css" href="../../css/style.css">
+        <!-- CDN toastify -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
         <!-- Meta description -->
         <meta name="description" content="">
         <!-- Meta Keywords  -->
@@ -65,12 +67,27 @@
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search" id="buscador">
-                  <button class="btn" type="submit"><i class="bi bi-search"></i></button>
-                  <button class="btn" type="submit"><i class="bi bi-person"></i></button>
-                  <button class="btn" type="submit"><i class="bi bi-heart"></i></button>
+                  <a href="" >
+                    <div class="btn">
+                      <p></p>
+                      <i class="bi bi-search"></i>
+                    </div>
+                  </a>
+                  <a href="" >
+                    <div class="btn">
+                      <p id=""></p>
+                      <i class="bi bi-person"></i>
+                    </div>
+                  </a>
+                  <a href="" >
+                    <div class="btn">
+                      <p id=""></p>
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </a>
                   <a href="carrito.html" >
                     <div class="btn">
-                      <p id="carrito-cantidad"></p>
+                      <p class="carrito-cantidad"></p>
                       <i class="bi bi-bag"></i>
                     </div>
                   </a>
@@ -83,66 +100,6 @@
           <section class="ecommerce-sport-shoes__banner">
           </section>
           <section class="container ecommerce-sport-shoes__products-grid" id="ecommerce-sport-shoes__products-grid">
-            <!-- <div class="product-grid">
-                <div class="product-image">
-                    <img src="../assets/images/productos/retro-hiker.webp" alt="">
-                    <div class="product-button-link">
-                      <ul>
-                        <li><i class="bi bi-three-dots"></i></li>
-                        <li><i class="bi bi-search"></i></li>
-                        <li><i class="bi bi-heart"></i></li>
-                      </ul>
-                    </div>
-                </div>
-                <div class="product-title">
-                    <h4 class="">
-                        <a href="#">Retro Hiker</a>      
-                    </h4>
-                    <p class="product-price">
-                        <span class="price">$30.00</span>
-                    </p>
-                </div>
-            </div>
-            <div class="product-grid">
-                <div class="product-image">
-                    <img src="../assets/images/productos/retro-hiker.webp" alt="">
-                    <div class="product-button-link">
-                      <ul>
-                        <li><i class="bi bi-three-dots"></i></li>
-                        <li><i class="bi bi-search"></i></li>
-                        <li><i class="bi bi-heart"></i></li>
-                      </ul>
-                    </div>
-                </div>
-                <div class="product-title">
-                    <h4 class="">
-                        <a href="#">Retro Hiker</a>      
-                    </h4>
-                    <p class="product-price">
-                        <span class="price">$30.00</span>
-                    </p>
-                </div>
-            </div>
-            <div class="product-grid">
-                <div class="product-image">
-                    <img src="../assets/images/productos/retro-hiker.webp" alt="">
-                    <div class="product-button-link">
-                      <ul>
-                        <li><i class="bi bi-three-dots"></i></li>
-                        <li><i class="bi bi-search"></i></li>
-                        <li><i class="bi bi-heart"></i></li>
-                      </ul>
-                    </div>
-                </div>
-                <div class="product-title">
-                    <h4 class="">
-                        <a href="#">Retro Hiker</a>      
-                    </h4>
-                    <p class="product-price">
-                        <span class="price">$30.00</span>
-                    </p>
-                </div>
-            </div> -->
           </section>              
         </main>
         <footer>
@@ -161,6 +118,9 @@
         
         <!-- Inicialización de AOS -->
         <script>AOS.init();</script>
+
+        <!-- CDN toastify -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
             <!-- Inicio de Script -->
        <script src="../../js/class.js"></script>

@@ -1,0 +1,14 @@
+img.image-carrito {
+    width: 100px;
+}
+
+.container.ecommerce-sport-shoes__products-carrito {
+    display: flex;
+    flex-direction: column;
+
+    div#btnComprar {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+

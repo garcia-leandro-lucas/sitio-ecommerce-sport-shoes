@@ -67,12 +67,30 @@
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search" id="buscador">
-                  <button class="btn" type="submit"><i class="bi bi-search"></i></button>
-                    <a class="btn" href="src/views/login.html">
+                  <a href="" >
+                    <div class="btn">
+                      <p id=""></p>
+                      <i class="bi bi-search"></i>
+                    </div>
+                  </a>
+                  <a href="" >
+                    <div class="btn">
+                      <p id=""></p>
                       <i class="bi bi-person"></i>
-                    </a>
-                  <button class="btn" type="submit"><i class="bi bi-heart"></i></button>
-                  <button class="btn" type="submit"><i class="bi bi-bag"></i></button>
+                    </div>
+                  </a>
+                  <a href="" >
+                    <div class="btn">
+                      <p id=""></p>
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </a>
+                  <a href="src/views/carrito.html" >
+                    <div class="btn">
+                      <p class="carrito-cantidad"></p>
+                      <i class="bi bi-bag"></i>
+                    </div>
+                  </a>
                 </form>
               </div>
             </div>
@@ -133,6 +151,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
         <!-- Swiper JS -->
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- CDN toastify -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        
         <script>
           var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
@@ -157,7 +178,11 @@
         <script src="js/class.js"></script>
         <script src="js/variables.js"></script>
         <script src="js/function.js"></script>
-        <script src="js/productos.js"></script>
+        <script src="js/productos.json"></script>
+        <script src="js/registro-de-usuario.js"></script>
+        <script src="js/registro-check.js"></script>
         <script src="js/carga_de_productos.js"></script>
+        <script src="js/carrito.js"></script>
+
     </body>
 </html>

@@ -19,11 +19,19 @@
             align-items: center;
             .product-grid {
                 .product-image {
+                    position: relative;
                     img {
                         width: 100%;
                     }
                     .product-button-link {
-                        margin: auto;
+                        position: absolute;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        bottom: 30px;
+                        ul.product-button__link {
+                            display: none;
+                        }
                         ul {
                             display: flex;
                             justify-content: center;
@@ -39,12 +47,41 @@
                                     padding: 10px 15px;
                                     background-color: #ffffff;
                                     border-radius: 4px;
-                                    //box-shadow: 2px 2px 15px 2px rgb(128 128 128 / 10%);
                                     margin: 10px;
                                 }
                             }
                         }
                     }
+                }
+            }
+            .product-title {
+                a {
+                    text-decoration: none;
+                    h4 {
+                        font-size: 16px;
+                        color: #000000;
+                    }    
+                }
+            }
+            .product-price {
+                font-size: 18px;
+                font-weight: 500;
+                span.price {
+
+                }
+            }
+            button.btn.btn-primary.anadir-al-carrito {
+                background-color: #000000;
+                border: #000000;
+                border-radius: 0px;
+                font-size: 18px;
+                width: 100%;
+
+                &:hover {
+                    background-color: #ffffff;
+                    color: #000000;
+                    outline: 1px solid #000000;
+                    transition: all 0.5s;
                 }
             }
         }

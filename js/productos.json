@@ -3,7 +3,7 @@
     {
         "id": 1,
         "marca": "Nike",
-        "titulo": "Zapatillas Nike Run Swift 2",
+        "titulo": "Zapatillas Air Jordan 1 Mid Barely Orange",
         "descripcion_corta":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_corta.",
         "descripcion_larga":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_larga.",
         "precio": 14999,
@@ -11,12 +11,12 @@
         "genero": "Unisex",
         "talle": [40, 41, 42, 43, 44, 45],
         "color": ["Negro", "Blanco", "Azul"],
-        "imagen": "/src/assets/images/productos/cloudaway-sneaker.webp"
+        "imagen": "/src/assets/images/productos/zapatillas-air-jordan-1-mid-barely-orange.jpeg"
     },
     {
         "id": 2,
         "marca": "Nike",
-        "titulo": "Zapatillas NIKE MD Runner 2",
+        "titulo": "Zapatillas Nike Air Force Essential",
         "descripcion_corta":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_corta.",
         "descripcion_larga":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_larga.",
         "precio": 45999,
@@ -24,12 +24,12 @@
         "genero": "Unisex",
         "talle": [40, 41, 42, 43, 44, 45],
         "color": ["Negro", "Blanco", "Azul"],
-        "imagen": "/src/assets/images/productos/gel-lyte-og.webp"
+        "imagen": "/src/assets/images/productos/zapatillas-nike-air-force-1-07-essential.jpeg"
     },
     {
         "id": 3,
         "marca": "Nike",
-        "titulo": "Zapatillas Nike Air Max Bella Tr 2",
+        "titulo": "Zapatillas Nike Air Force Se",
         "descripcion_corta":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_corta.",
         "descripcion_larga":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_larga.",
         "precio": 82999,
@@ -37,6 +37,191 @@
         "genero": "Unisex",
         "talle": [40, 41, 42, 43, 44, 45],
         "color": ["Gris", "Turquesa ", "Azul"],
-        "imagen": "/src/assets/images/productos/cloudaway.webp"
+        "imagen": "/src/assets/images/productos/zapatillas-nike-air-force-1-07-Se.jpeg"
+    }
+    ,
+    {
+        "id": 4,
+        "marca": "Nike",
+        "titulo": "Zapatillas Nike Air Force Essential",
+        "descripcion_corta":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_corta.",
+        "descripcion_larga":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_larga.",
+        "precio": 82999,
+        "categoria":"Training",
+        "genero": "Unisex",
+        "talle": [40, 41, 42, 43, 44, 45],
+        "color": ["Gris", "Turquesa ", "Azul"],
+        "imagen": "/src/assets/images/productos/zapatillas-nike-air-force-2-07-essential.jpeg"
+    }
+    ,
+    {
+        "id": 5,
+        "marca": "Nike",
+        "titulo": "Zapatillas Nike Air Force Lv8",
+        "descripcion_corta":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_corta.",
+        "descripcion_larga":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_larga.",
+        "precio": 82999,
+        "categoria":"Training",
+        "genero": "Unisex",
+        "talle": [40, 41, 42, 43, 44, 45],
+        "color": ["Gris", "Turquesa ", "Azul"],
+        "imagen": "/src/assets/images/productos/zapatillas-nike-Air-Force-2-07-lv8.jpeg"
+    }
+    ,
+    {
+        "id": 6,
+        "marca": "Nike",
+        "titulo": "Zapatillas Nike Air Force Fontanka",
+        "descripcion_corta":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_corta.",
+        "descripcion_larga":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_larga.",
+        "precio": 82999,
+        "categoria":"Training",
+        "genero": "Unisex",
+        "talle": [40, 41, 42, 43, 44, 45],
+        "color": ["Gris", "Turquesa ", "Azul"],
+        "imagen": "/src/assets/images/productos/zapatillas-nike-air-force-fontanka.jpeg"
+    },
+    {
+        "id": 7,
+        "marca": "Nike",
+        "titulo": "Zapatillas Nike Air Max 90 premium",
+        "descripcion_corta":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_corta.",
+        "descripcion_larga":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_larga.",
+        "precio": 82999,
+        "categoria":"Training",
+        "genero": "Unisex",
+        "talle": [40, 41, 42, 43, 44, 45],
+        "color": ["Gris", "Turquesa ", "Azul"],
+        "imagen": "/src/assets/images/productos/zapatillas-nike-air-max-90-premium.jpeg"
+    },
+    {
+        "id": 8,
+        "marca": "Nike",
+        "titulo": "Zapatillas Nike Air Max 90 se",
+        "descripcion_corta":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_corta.",
+        "descripcion_larga":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_larga.",
+        "precio": 82999,
+        "categoria":"Training",
+        "genero": "Unisex",
+        "talle": [40, 41, 42, 43, 44, 45],
+        "color": ["Gris", "Turquesa ", "Azul"],
+        "imagen": "/src/assets/images/productos/zapatillas-nike-air-max-90-se.jpeg"
+    },
+    {
+        "id": 9,
+        "marca": "Nike",
+        "titulo": "Zapatillas Nike Blazer Mid",
+        "descripcion_corta":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_corta.",
+        "descripcion_larga":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_larga.",
+        "precio": 82999,
+        "categoria":"Training",
+        "genero": "Unisex",
+        "talle": [40, 41, 42, 43, 44, 45],
+        "color": ["Gris", "Turquesa ", "Azul"],
+        "imagen": "/src/assets/images/productos/zapatillas-nike-blazer-mid-77.jpeg"
+    },
+    {
+        "id": 10,
+        "marca": "Nike",
+        "titulo": "Zapatillas Nike Blazer Mid 77 lx",
+        "descripcion_corta":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_corta.",
+        "descripcion_larga":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_larga.",
+        "precio": 82999,
+        "categoria":"Training",
+        "genero": "Unisex",
+        "talle": [40, 41, 42, 43, 44, 45],
+        "color": ["Gris", "Turquesa ", "Azul"],
+        "imagen": "/src/assets/images/productos/zapatillas-nike-blazer-mid-77-lx.jpeg"
+    },
+    {
+        "id": 11,
+        "marca": "Nike",
+        "titulo": "Zapatillas Nike Blazer Mid 78",
+        "descripcion_corta":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_corta.",
+        "descripcion_larga":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_larga.",
+        "precio": 82999,
+        "categoria":"Training",
+        "genero": "Unisex",
+        "talle": [40, 41, 42, 43, 44, 45],
+        "color": ["Gris", "Turquesa ", "Azul"],
+        "imagen": "/src/assets/images/productos/zapatillas-nike-blazer-mid-78.jpeg"
+    },
+    {
+        "id": 12,
+        "marca": "Nike",
+        "titulo": "Zapatillas Nike Court Legacy Canva",
+        "descripcion_corta":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_corta.",
+        "descripcion_larga":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_larga.",
+        "precio": 82999,
+        "categoria":"Training",
+        "genero": "Unisex",
+        "talle": [40, 41, 42, 43, 44, 45],
+        "color": ["Gris", "Turquesa ", "Azul"],
+        "imagen": "/src/assets/images/productos/zapatillas-nike-court-legacy-canvas.jpeg"
+    },
+    {
+        "id": 13,
+        "marca": "Nike",
+        "titulo": "Zapatillas Nike Crater Impact",
+        "descripcion_corta":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_corta.",
+        "descripcion_larga":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_larga.",
+        "precio": 82999,
+        "categoria":"Training",
+        "genero": "Unisex",
+        "talle": [40, 41, 42, 43, 44, 45],
+        "color": ["Gris", "Turquesa ", "Azul"],
+        "imagen": "/src/assets/images/productos/zapatillas-nike-crater-impact.jpeg"
+    },
+    {
+        "id": 14,
+        "marca": "Nike",
+        "titulo": "Zapatillas Nike Dunk Low Disrupt",
+        "descripcion_corta":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_corta.",
+        "descripcion_larga":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_larga.",
+        "precio": 82999,
+        "categoria":"Training",
+        "genero": "Unisex",
+        "talle": [40, 41, 42, 43, 44, 45],
+        "color": ["Gris", "Turquesa ", "Azul"],
+        "imagen": "/src/assets/images/productos/zapatillas-nike-dunk-low-disrupt-2.jpeg"
+    },
+    {
+        "id": 15,
+        "marca": "Nike",
+        "titulo": "Zapatillas Nike Lebron xix Low",
+        "descripcion_corta":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_corta.",
+        "descripcion_larga":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_larga.",
+        "precio": 82999,
+        "categoria":"Training",
+        "genero": "Unisex",
+        "talle": [40, 41, 42, 43, 44, 45],
+        "color": ["Gris", "Turquesa ", "Azul"],
+        "imagen": "/src/assets/images/productos/zapatillas-nike-lebron-xix-low.jpeg"
+    },
+    {
+        "id": 16,
+        "marca": "Nike",
+        "titulo": "Zapatillas Nike Pre love",
+        "descripcion_corta":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_corta.",
+        "descripcion_larga":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_larga.",
+        "precio": 82999,
+        "categoria":"Training",
+        "genero": "Unisex",
+        "talle": [40, 41, 42, 43, 44, 45],
+        "color": ["Gris", "Turquesa ", "Azul"],
+        "imagen": "/src/assets/images/productos/zapatillas-nike-pre-love.jpeg"
+    },
+    {
+        "id": 17,
+        "marca": "Nike",
+        "titulo": "Zapatillas Zike Air Max Furyosa",
+        "descripcion_corta":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_corta.",
+        "descripcion_larga":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_larga.",
+        "precio": 82999,
+        "categoria":"Training",
+        "genero": "Unisex",
+        "talle": [40, 41, 42, 43, 44, 45],
+        "color": ["Gris", "Turquesa ", "Azul"],
+        "imagen": "/src/assets/images/productos/zapatillas-zike-air-max-furyosa.jpeg"
     }
 ]

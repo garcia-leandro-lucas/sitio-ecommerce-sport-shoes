@@ -17,7 +17,7 @@ function cargarCarrito(arrayCarritoDeProductos) {
             <th><img class="image-carrito" src="${producto.imagen}" alt="${producto.id}"></th>
             <th>${producto.titulo}</th>
             <th>$${producto.precio}</th>
-            <th><input type="number" class="cantidad-de-productos" value=${producto.cantidad}></th>
+            <th>${producto.cantidad}</th>
             <th>${producto.subtotal}</th>
             <th><button class="btn-eliminar" id="${producto.id}"><i class="bi bi-trash-fill"></i></button></th>
         `;
@@ -25,6 +25,7 @@ function cargarCarrito(arrayCarritoDeProductos) {
         tbody.appendChild(tbodyRow);
         
     }
+    //<th><input type="number" class="cantidad-de-productos" value=${producto.cantidad}></th>
 
     let btnDiv = document.createElement('div');
     btnDiv.innerHTML = `

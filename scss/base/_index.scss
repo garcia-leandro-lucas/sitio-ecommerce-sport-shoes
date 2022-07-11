@@ -107,22 +107,43 @@ header {
 /**/
 
 .index-ecommerce-sport-shoes {
-    section.ecommerce-sport-shoes__carrousel {
+    main {
+        section.ecommerce-sport-shoes__carrousel {
         
-    }
+        }
+    
+        .ecommerce-sport-shoes__grid-images {
+            display: grid;
+            grid-template-columns: 20% 60% 20%;
+            grid-template-rows: 300px;
+            margin-bottom: 100px;
+            margin-top: 100px;
+            gap: 10px;
+            justify-content: center;
+            align-content: center;
+    
+            .grid-image {
+                overflow: hidden;
+            }
+        }
 
-    .ecommerce-sport-shoes__grid-images {
-        display: grid;
-        grid-template-columns: 20% 60% 20%;
-        grid-template-rows: 300px;
-        margin-bottom: 100px;
-        margin-top: 100px;
-        gap: 10px;
-        justify-content: center;
-        align-content: center;
-
-        .grid-image {
-            overflow: hidden;
+        section.container.ecommerce-sport-shoes__grid-slick {
+            .ecommerce-sport-shoes__grid-slick__grid.slick-initialized.slick-slider {
+                button.slick-arrow {
+                    &:before {
+                        color: #000000;
+                    }
+                }
+                .slick-list.draggable {
+                    .slick-track {
+                        .grid-image {
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

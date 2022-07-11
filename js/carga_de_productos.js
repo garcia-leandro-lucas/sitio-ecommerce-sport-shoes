@@ -13,23 +13,20 @@ const cargarProductos = () => {
                 div.innerHTML = `
                 <div class="product-grid">
                     <div class="product-image">
-                        <img src="${Productos.imagen}" alt="${Productos.id}">
+                        <img class="product-image__img" src="${Productos.imagen}" alt="${Productos.id}">
                         <div class="product-button-link">
-                        <ul>
-                            <li><i class="bi bi-three-dots"></i></li>
-                            <li><i class="bi bi-search"></i></li>
-                            <li><i class="bi bi-heart"></i></li>
-                        </ul>
+                            <ul class="product-button__link">
+                                <li><i class="bi bi-three-dots"></i></li>
+                                <li><i class="bi bi-search"></i></li>
+                                <li><i class="bi bi-heart"></i></li>
+                            </ul>
                         </div>
                     </div>
                     <div class="product-title">
-                        <h4 class="">
-                            <a href="#">${Productos.titulo}</a>      
-                        </h4>
-                        <p class="product-price">
-                        $
-                            <span class="price">${Productos.precio}</span>
-                        </p>
+                        <a href="#">
+                            <h4 class="">${Productos.titulo}</h4>
+                        </a>  
+                        <p class="product-price">$<span class="price">${Productos.precio}</span></p>
                     </div>
                     <button class="btn btn-primary anadir-al-carrito">Agregar al carrito</button>
                 </div>
@@ -43,17 +40,31 @@ const cargarProductos = () => {
                 elemento.addEventListener("click",anadirCarrito);
             });
 
-
             let carritoLocalStorage = JSON.parse(localStorage.getItem("carritoDeCompra"));
             if(carritoLocalStorage) {
                 carritoDeNavegacion(carritoLocalStorage);
             }
+
+            let productImage = document.querySelectorAll('.product-image');
+            productImage.forEach(e => {
+                e.preventDefault();
+                e.addEventListener("mouseover", mostrarIconos);
+                //e.addEventListener("mouseout", ocultarIconos);
+            });
+
+            function mostrarIconos(e) {
+                let iconos = e.target.parentNode.children[1];
+                iconos.style.display = 'block';   
+            }
             
-    })
+            function ocultarIconos(e) {
+                let iconos = e.target.parentNode.children[1];
+                iconos.style.display = 'none';
+            }  
+    });
 }
 
 cargarProductos();
-    
 
 /*
  * Añade al carrito el producto seleccionado y lo guarda en el localStorage
@@ -88,7 +99,8 @@ function anadirCarrito(e) {
 
     localStorage.setItem("carritoDeCompra", JSON.stringify(carritoDeCompra));
     carritoDeNavegacion(carritoDeCompra);
-    }
+}
+
 
 /*
  * Se genera un contador en el icono del carrito del header

@@ -18,6 +18,11 @@
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <!-- Icons CDN bootstrap -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <!-- CDN slick -->
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
         <!-- Css -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <!-- Meta description -->
@@ -125,15 +130,29 @@
             </div>
           </section>
 
-          <section class="container ecommerce-sport-shoes__grid-images">
-            <div class="grid-image">
-              <img src="src/assets/images/card-shoes/ba3.webp" alt="">
-            </div>
-            <div class="grid-image">
-              <img src="src/assets/images/card-shoes/ba5.webp" alt="">
-            </div>
-            <div class="grid-image">
-              <img src="src/assets/images/card-shoes/ba4.webp" alt="">
+          <section class="container ecommerce-sport-shoes__grid-slick">
+            <div class="ecommerce-sport-shoes__grid-slick__grid">
+                <div class="grid-image">
+                  <img src="/src/assets/images/productos/zapatillas-nike-blazer-mid-77-lx.jpeg" alt="">
+                </div>
+                <div class="grid-image">
+                  <img src="/src/assets/images/productos/zapatillas-air-jordan-1-mid-barely-orange.jpeg" alt="">
+                </div>
+                <div class="grid-image">
+                  <img src="/src/assets/images/productos/zapatillas-nike-air-max-90-premium.jpeg" alt="">
+                </div>
+                <div class="grid-image">
+                  <img src="/src/assets/images/productos/zapatillas-nike-air-force-fontanka.jpeg" alt="">
+                </div>
+                <div class="grid-image">
+                  <img src="/src/assets/images/productos/zapatillas-nike-pre-love.jpeg" alt="">
+                </div>
+                <div class="grid-image">
+                  <img src="/src/assets/images/productos/zapatillas-nike-blazer-mid-77.jpeg" alt="">
+                </div>
+                <div class="grid-image">
+                  <img src="/src/assets/images/productos/zapatillas-nike-blazer-mid-78.jpeg" alt="">
+                </div>
             </div>
           </section>
 
@@ -153,28 +172,17 @@
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <!-- CDN toastify -->
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-        
-        <script>
-          var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-          });
-        </script>
+        <!-- CDN jquery -->
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <!-- CDN slick -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <!-- script AOS -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <!-- Inicialización de AOS -->
         <script>AOS.init();</script>
 
         <!-- Script -->
+        <script src="js/script.js"></script>
         <script src="js/class.js"></script>
         <script src="js/variables.js"></script>
         <script src="js/function.js"></script>

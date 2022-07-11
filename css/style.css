@@ -150,7 +150,7 @@ header .navbar.navbar-expand-lg .container .navbar-collapse.collapse form.d-flex
     font-size: 1.5em; }
 
 /**/
-.index-ecommerce-sport-shoes .ecommerce-sport-shoes__grid-images {
+.index-ecommerce-sport-shoes main .ecommerce-sport-shoes__grid-images {
   display: grid;
   grid-template-columns: 20% 60% 20%;
   grid-template-rows: 300px;
@@ -159,8 +159,12 @@ header .navbar.navbar-expand-lg .container .navbar-collapse.collapse form.d-flex
   gap: 10px;
   justify-content: center;
   align-content: center; }
-  .index-ecommerce-sport-shoes .ecommerce-sport-shoes__grid-images .grid-image {
+  .index-ecommerce-sport-shoes main .ecommerce-sport-shoes__grid-images .grid-image {
     overflow: hidden; }
+.index-ecommerce-sport-shoes main section.container.ecommerce-sport-shoes__grid-slick .ecommerce-sport-shoes__grid-slick__grid.slick-initialized.slick-slider button.slick-arrow:before {
+  color: #000000; }
+.index-ecommerce-sport-shoes main section.container.ecommerce-sport-shoes__grid-slick .ecommerce-sport-shoes__grid-slick__grid.slick-initialized.slick-slider .slick-list.draggable .slick-track .grid-image img {
+  width: 100%; }
 
 .login-ecommerce-sport-shoes main section.ecommerce-sport-shoes__banner {
   background-image: url("../../src/assets/images/banner/collection.webp");
@@ -188,25 +192,52 @@ header .navbar.navbar-expand-lg .container .navbar-collapse.collapse form.d-flex
   margin: 50px auto;
   justify-content: center;
   align-items: center; }
-  .productos-ecommerce-sport-shoes main section.ecommerce-sport-shoes__products-grid .product-grid .product-image img {
-    width: 100%; }
-  .productos-ecommerce-sport-shoes main section.ecommerce-sport-shoes__products-grid .product-grid .product-image .product-button-link {
-    margin: auto; }
-    .productos-ecommerce-sport-shoes main section.ecommerce-sport-shoes__products-grid .product-grid .product-image .product-button-link ul {
+  .productos-ecommerce-sport-shoes main section.ecommerce-sport-shoes__products-grid .product-grid .product-image {
+    position: relative; }
+    .productos-ecommerce-sport-shoes main section.ecommerce-sport-shoes__products-grid .product-grid .product-image img {
+      width: 100%; }
+    .productos-ecommerce-sport-shoes main section.ecommerce-sport-shoes__products-grid .product-grid .product-image .product-button-link {
+      position: absolute;
+      width: 100%;
       display: flex;
       justify-content: center;
-      align-items: center;
-      align-content: center;
-      margin: auto;
-      padding: 0; }
-      .productos-ecommerce-sport-shoes main section.ecommerce-sport-shoes__products-grid .product-grid .product-image .product-button-link ul li {
-        list-style: none; }
-        .productos-ecommerce-sport-shoes main section.ecommerce-sport-shoes__products-grid .product-grid .product-image .product-button-link ul li i {
-          font-size: 25px;
-          padding: 10px 15px;
-          background-color: #ffffff;
-          border-radius: 4px;
-          margin: 10px; }
+      bottom: 30px; }
+      .productos-ecommerce-sport-shoes main section.ecommerce-sport-shoes__products-grid .product-grid .product-image .product-button-link ul.product-button__link {
+        display: none; }
+      .productos-ecommerce-sport-shoes main section.ecommerce-sport-shoes__products-grid .product-grid .product-image .product-button-link ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: auto;
+        padding: 0; }
+        .productos-ecommerce-sport-shoes main section.ecommerce-sport-shoes__products-grid .product-grid .product-image .product-button-link ul li {
+          list-style: none; }
+          .productos-ecommerce-sport-shoes main section.ecommerce-sport-shoes__products-grid .product-grid .product-image .product-button-link ul li i {
+            font-size: 25px;
+            padding: 10px 15px;
+            background-color: #ffffff;
+            border-radius: 4px;
+            margin: 10px; }
+  .productos-ecommerce-sport-shoes main section.ecommerce-sport-shoes__products-grid .product-title a {
+    text-decoration: none; }
+    .productos-ecommerce-sport-shoes main section.ecommerce-sport-shoes__products-grid .product-title a h4 {
+      font-size: 16px;
+      color: #000000; }
+  .productos-ecommerce-sport-shoes main section.ecommerce-sport-shoes__products-grid .product-price {
+    font-size: 18px;
+    font-weight: 500; }
+  .productos-ecommerce-sport-shoes main section.ecommerce-sport-shoes__products-grid button.btn.btn-primary.anadir-al-carrito {
+    background-color: #000000;
+    border: #000000;
+    border-radius: 0px;
+    font-size: 18px;
+    width: 100%; }
+    .productos-ecommerce-sport-shoes main section.ecommerce-sport-shoes__products-grid button.btn.btn-primary.anadir-al-carrito:hover {
+      background-color: #ffffff;
+      color: #000000;
+      outline: 1px solid #000000;
+      transition: all 0.5s; }
 
 .login-ecommerce-sport-shoes .container.ecommerce-sport-shoes__form-login__ckeck .mb-3 .content-edit-date {
   display: flex;
@@ -222,9 +253,9 @@ img.image-carrito {
     display: flex;
     justify-content: flex-end; }
 
-.toastify.on.mensaje-se-agrego-exitosamente.toastify-right.toastify-top {
+.toastify.on.mensaje-se-agrego-exitosamente.toastify-right.toastify-bottom {
   background: green; }
-  .toastify.on.mensaje-se-agrego-exitosamente.toastify-right.toastify-top span.toast-close {
+  .toastify.on.mensaje-se-agrego-exitosamente.toastify-right.toastify-bottom span.toast-close {
     padding-left: 25px;
     color: white !important;
     opacity: 1; }

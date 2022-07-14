@@ -1,3 +1,4 @@
+/* script para el slider de la home - banner Home */
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -12,8 +13,9 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
 
+/* script para el slider de la home - Productos relacionados */
 $(document).ready(function(){
-    $('.ecommerce-sport-shoes__grid-slick__grid').slick({
+    $('#grid-slick__grid').slick({
       speed: 300,
       infinite: true,
       slidesToShow: 4,

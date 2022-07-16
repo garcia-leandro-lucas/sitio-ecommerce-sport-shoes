@@ -15,11 +15,11 @@ var swiper = new Swiper(".mySwiper", {
 
 /* script para el slider de la home - Productos relacionados */
 $(document).ready(function(){
-    $('#grid-slick__grid').slick({
+    /*$('#grid-slick__grid').slick({
       speed: 300,
       infinite: true,
       slidesToShow: 4,
       slidesToScroll: 1,
       arrows:true
-      });
+      });*/
   });

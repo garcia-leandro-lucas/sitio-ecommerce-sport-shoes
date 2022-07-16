@@ -127,8 +127,7 @@ header {
             }
         }
 
-        section.container.ecommerce-sport-shoes__grid-slick {
-            .ecommerce-sport-shoes__grid-slick__grid.slick-initialized.slick-slider {
+        section#grid-slick__grid {
                 button.slick-arrow {
                     &:before {
                         color: #000000;
@@ -140,10 +139,16 @@ header {
                             img {
                                 width: 100%;
                             }
+                            h4 {
+                                font-size: 16px;
+                            }
+                            p {
+                                font-size: 18px;
+                            }
+
                         }
                     }
                 }
-            }
         }
     }
 }

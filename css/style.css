@@ -161,14 +161,31 @@ header .navbar.navbar-expand-lg .container .navbar-collapse.collapse form.d-flex
   align-content: center; }
   .index-ecommerce-sport-shoes main .ecommerce-sport-shoes__grid-images .grid-image {
     overflow: hidden; }
-.index-ecommerce-sport-shoes main section#grid-slick__grid button.slick-arrow:before {
+.index-ecommerce-sport-shoes main .ecommerce-sport-shoes__grid-slick .ecommerce-sport-shoes__grid-slick__title h4 {
+  font-size: 30px;
+  margin: 0 auto;
+  text-align: center; }
+.index-ecommerce-sport-shoes main .ecommerce-sport-shoes__grid-slick #grid-slick__grid button.slick-arrow:before {
   color: #000000; }
-.index-ecommerce-sport-shoes main section#grid-slick__grid .slick-list.draggable .slick-track .grid-image img {
+.index-ecommerce-sport-shoes main .ecommerce-sport-shoes__grid-slick #grid-slick__grid .slick-list.draggable .slick-track .grid-image img {
   width: 100%; }
-.index-ecommerce-sport-shoes main section#grid-slick__grid .slick-list.draggable .slick-track .grid-image h4 {
+.index-ecommerce-sport-shoes main .ecommerce-sport-shoes__grid-slick #grid-slick__grid .slick-list.draggable .slick-track .grid-image h4 {
   font-size: 16px; }
-.index-ecommerce-sport-shoes main section#grid-slick__grid .slick-list.draggable .slick-track .grid-image p {
+.index-ecommerce-sport-shoes main .ecommerce-sport-shoes__grid-slick #grid-slick__grid .slick-list.draggable .slick-track .grid-image p {
   font-size: 18px; }
+.index-ecommerce-sport-shoes footer.footer {
+  background-color: black;
+  margin: 0 auto;
+  text-align: center; }
+  .index-ecommerce-sport-shoes footer.footer nav #navbarSupportedContent ul.navbar-nav {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; }
+    .index-ecommerce-sport-shoes footer.footer nav #navbarSupportedContent ul.navbar-nav li a {
+      color: white; }
+  .index-ecommerce-sport-shoes footer.footer .footer__logo .navbar-brand img.logo {
+    width: 20%;
+    padding: 50px; }
 
 .login-ecommerce-sport-shoes main section.ecommerce-sport-shoes__banner {
   background-image: url("../../src/assets/images/banner/collection.webp");

@@ -2,6 +2,11 @@
 $(document).ready(function(){
 
     const productosRelacionados = $('#grid-slick__grid');
+    const tituloRelacionados = $('.ecommerce-sport-shoes__grid-slick__title');
+
+    let titulo = document.createElement('h4');
+    titulo.innerHTML = `Productos relacionados`;
+    tituloRelacionados.append(titulo);
 
     const carrito = JSON.parse(localStorage.getItem("carritoDeCompra"));
     const URL_PRODUCTOS = '/js/productos.json';
@@ -20,19 +25,46 @@ $(document).ready(function(){
                         <p>$${Productos.precio}</p>
                     `;
                     productosRelacionados.append(div);
-    
                 });
-                $('#grid-slick__grid').slick({
-                    speed: 300,
-                    infinite: true,
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                    arrows:true
-                    });
+
+                slideProductosRelacionados();
         });
     };
-    
+    //productosRelacionados.append(titulo);
     cargarProductos();
 })
+
+
+
+
+const slideProductosRelacionados = () => {
+    $('#grid-slick__grid').slick({
+        speed: 300,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows:true,
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: true,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+}
 
 

@@ -150,6 +150,22 @@ header .navbar.navbar-expand-lg .container .navbar-collapse.collapse form.d-flex
     font-size: 1.5em; }
 
 /**/
+/*Inicio footer*/
+footer.footer {
+  background-color: black;
+  margin: 0 auto;
+  text-align: center; }
+  footer.footer nav #navbarSupportedContent ul.navbar-nav {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; }
+    footer.footer nav #navbarSupportedContent ul.navbar-nav li a {
+      color: white; }
+  footer.footer .footer__logo .navbar-brand img.logo {
+    width: 20%;
+    padding: 50px; }
+
+/*Fin footer*/
 .index-ecommerce-sport-shoes main .ecommerce-sport-shoes__grid-images {
   display: grid;
   grid-template-columns: 20% 60% 20%;
@@ -173,19 +189,6 @@ header .navbar.navbar-expand-lg .container .navbar-collapse.collapse form.d-flex
   font-size: 16px; }
 .index-ecommerce-sport-shoes main .ecommerce-sport-shoes__grid-slick #grid-slick__grid .slick-list.draggable .slick-track .grid-image p {
   font-size: 18px; }
-.index-ecommerce-sport-shoes footer.footer {
-  background-color: black;
-  margin: 0 auto;
-  text-align: center; }
-  .index-ecommerce-sport-shoes footer.footer nav #navbarSupportedContent ul.navbar-nav {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto; }
-    .index-ecommerce-sport-shoes footer.footer nav #navbarSupportedContent ul.navbar-nav li a {
-      color: white; }
-  .index-ecommerce-sport-shoes footer.footer .footer__logo .navbar-brand img.logo {
-    width: 20%;
-    padding: 50px; }
 
 .login-ecommerce-sport-shoes main section.ecommerce-sport-shoes__banner {
   background-image: url("../../src/assets/images/banner/collection.webp");
@@ -197,6 +200,21 @@ header .navbar.navbar-expand-lg .container .navbar-collapse.collapse form.d-flex
 .login-ecommerce-sport-shoes main section.container.ecommerce-sport-shoes__form-login {
   margin-top: 100px;
   width: 50%; }
+  .login-ecommerce-sport-shoes main section.container.ecommerce-sport-shoes__form-login form .mb-3 .input-pass {
+    position: relative; }
+    .login-ecommerce-sport-shoes main section.container.ecommerce-sport-shoes__form-login form .mb-3 .input-pass span {
+      position: absolute;
+      right: 20px;
+      top: 8px; }
+
+#mensajeDeStatus p.mensaje-de-status__usuario-no-existe, #mensajeDeStatus .mensaje-de-status__datos-incorrectos {
+  padding: 5px;
+  text-align: center;
+  color: red; }
+  #mensajeDeStatus p.mensaje-de-status__usuario-no-existe a, #mensajeDeStatus .mensaje-de-status__datos-incorrectos a {
+    text-decoration: none; }
+    #mensajeDeStatus p.mensaje-de-status__usuario-no-existe a strong, #mensajeDeStatus .mensaje-de-status__datos-incorrectos a strong {
+      color: black; }
 
 .productos-ecommerce-sport-shoes main section.ecommerce-sport-shoes__banner {
   background-image: url("../../src/assets/images/banner/collection.webp");

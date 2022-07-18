@@ -107,8 +107,39 @@ header {
         }
     }
 }
-
 /**/
+
+/*Inicio footer*/
+footer.footer {
+    background-color: black;
+    margin: 0 auto;
+    text-align: center;
+
+    nav {
+        #navbarSupportedContent {
+            ul.navbar-nav {
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+                li {
+                    a {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer__logo {
+        .navbar-brand {
+            img.logo {
+                width: 20%;
+                padding: 50px;
+            }
+        }
+    }
+}
+/*Fin footer*/
 
 .index-ecommerce-sport-shoes {
     main {
@@ -162,36 +193,6 @@ header {
 
                         }
                     }
-                }
-            }
-        }
-    }
-
-    footer.footer {
-        background-color: black;
-        margin: 0 auto;
-        text-align: center;
-
-        nav {
-            #navbarSupportedContent {
-                ul.navbar-nav {
-                    display: flex;
-                    justify-content: center;
-                    margin: 0 auto;
-                    li {
-                        a {
-                            color: white;
-                        }
-                    }
-                }
-            }
-        }
-
-        .footer__logo {
-            .navbar-brand {
-                img.logo {
-                    width: 20%;
-                    padding: 50px;
                 }
             }
         }

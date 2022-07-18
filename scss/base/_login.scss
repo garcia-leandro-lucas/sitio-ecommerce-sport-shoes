@@ -12,6 +12,34 @@
         section.container.ecommerce-sport-shoes__form-login {
             margin-top: 100px;
             width: 50%;
+
+            form {
+                .mb-3 {
+                    .input-pass {
+                        position: relative;
+                        span {
+                            position: absolute;
+                            right: 20px;
+                            top: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#mensajeDeStatus {
+    p.mensaje-de-status__usuario-no-existe, .mensaje-de-status__datos-incorrectos {
+        padding: 5px;
+        text-align: center;
+        color: red;
+
+        a {
+            text-decoration: none;
+            strong {
+                color: black;
+            }
         }
     }
 }

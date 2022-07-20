@@ -1,5 +1,8 @@
-//const productosRelacionados = document.getElementById('grid-slick__grid');
+
+
 $(document).ready(function(){
+
+    //import {anadirCarrito} from "./carga_de_productos.js";
 
     const productosRelacionados = $('#grid-slick__grid');
     const tituloRelacionados = $('.ecommerce-sport-shoes__grid-slick__title');
@@ -21,8 +24,11 @@ $(document).ready(function(){
                     div.setAttribute('class', 'grid-image');
                     div.innerHTML = `
                         <img id="grid-image" src="${Productos.imagen}" alt="${Productos.id}">
-                        <h4>${Productos.titulo}</h4>
-                        <p>$${Productos.precio}</p>
+                        <div class="box-content">
+                          <h4>${Productos.titulo}</h4>
+                          <p>$${Productos.precio}</p>
+                        </div>
+                        <button class="btn btn-primary anadir-al-carrito">Agregar al carrito</button>
                     `;
                     productosRelacionados.append(div);
                 });

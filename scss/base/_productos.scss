@@ -70,20 +70,21 @@
 
                 }
             }
-            button.btn.btn-primary.anadir-al-carrito {
-                background-color: #000000;
-                border: #000000;
-                border-radius: 0px;
-                font-size: 18px;
-                width: 100%;
-
-                &:hover {
-                    background-color: #ffffff;
-                    color: #000000;
-                    outline: 1px solid #000000;
-                    transition: all 0.5s;
-                }
-            }
         }
+    }
+}
+
+button.btn.btn-primary.anadir-al-carrito {
+    background-color: #000000;
+    border: #000000;
+    border-radius: 0px;
+    font-size: 18px;
+    width: 100%;
+
+    &:hover {
+        background-color: #ffffff;
+        color: #000000;
+        outline: 1px solid #000000;
+        transition: all 0.5s;
     }
 }

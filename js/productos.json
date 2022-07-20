@@ -3,7 +3,7 @@
     {
         "id": 1,
         "marca": "Nike",
-        "titulo": "Zapatillas Air Jordan 1 Mid Barely Orange",
+        "titulo": "Zapatillas Air Jordan 1 Mid Barely",
         "descripcion_corta":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_corta.",
         "descripcion_larga":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_larga.",
         "precio": 14999,
@@ -84,7 +84,7 @@
     {
         "id": 7,
         "marca": "Nike",
-        "titulo": "Zapatillas Nike Air Max 90 premium",
+        "titulo": "Zapatillas Nike Air Max 90",
         "descripcion_corta":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_corta.",
         "descripcion_larga":"Lorem ipsum dolor sit amet consectetur adipisicing elit. descripcion_larga.",
         "precio": 82999,

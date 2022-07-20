@@ -15,6 +15,13 @@ class Usuario {
 	/* Muestra un mensaje de bienvenida al  */
 	mostrar_bienvenida() {
 		alert(`Bienvenida/o ${this.nombre} ${this.apellido}.\nYa guardamos tus datos para que puedas realizar la compra de forma segura.`);
+		// Swal.fire({
+		// 	position: 'top-end',
+		// 	icon: 'success',
+		// 	title: `Bienvenida/o ${this.nombre} ${this.apellido}.\nYa guardamos tus datos para que puedas realizar la compra de forma segura.`,
+		// 	showConfirmButton: false,
+		// 	timer: 1500
+		//   })
 		
 	}
 }

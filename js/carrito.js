@@ -1,10 +1,16 @@
-const carrito = JSON.parse(localStorage.getItem("carritoDeCompra"));
+/* Se exportan contantes */
+import {
+    CARRITO
+} from "./constantes.js";
+
+/* Se exportan variables */
+import {
+    tbody,
+    btnComprar
+} from "./variables.js";
+
 //console.log(carrito);
-carritoDeNavegacion(carrito);
-
-let tbody = document.querySelector('#tbody');
-let btnComprar = document.querySelector('#btnComprar');
-
+carritoDeNavegacion(CARRITO);
 
 function cargarCarrito(arrayCarritoDeProductos) {
 
@@ -34,7 +40,7 @@ function cargarCarrito(arrayCarritoDeProductos) {
     btnComprar.appendChild(btnDiv);
 }
 
-cargarCarrito(carrito);
+cargarCarrito(CARRITO);
 
 
 let btnEliminar = document.querySelectorAll('.btn-eliminar');
@@ -52,7 +58,7 @@ function comprarProducto(e) {
     (e.target.parentNode.parentNode.parentNode.children[0].children[1]).remove();
     e.target.parentNode.parentNode.remove();
     mensajeSeRealizoLaCompraExitosamente();
-    carritoDeNavegacion(carrito);
+    carritoDeNavegacion(CARRITO);
     localStorage.clear();
     setTimeout(function(){
         window.location.href = "/index.html";   
@@ -62,14 +68,14 @@ function comprarProducto(e) {
 function eliminarProducto(e) {
     mensajeSeEliminoExitosamente();
     console.log(e.target.parentNode.id);
-    let indexCarrito = carrito.findIndex(producto => producto.id == e.target.parentNode.id);
+    let indexCarrito = CARRITO.findIndex(producto => producto.id == e.target.parentNode.id);
     //console.log(indexCarrito);
-    carrito.splice(indexCarrito, 1);
+    CARRITO.splice(indexCarrito, 1);
     //console.log("Este es un: " + e.target.parentNode);
     e.target.parentNode.parentNode.parentNode.remove();
-    carritoDeNavegacion(carrito);
+    carritoDeNavegacion(CARRITO);
 
-    localStorage.setItem("carritoDeCompra", JSON.stringify(carrito));
+    localStorage.setItem("carritoDeCompra", JSON.stringify(CARRITO));
 }
 
 let cantidadDeProductos = document.querySelectorAll('.cantidad-de-productos');
@@ -90,9 +96,9 @@ function cambiaLaCantidadDeProductos(e) {
     //input.value <= 0 ? input.value = 1: null;
     let indexCarrito = carritoDeCompra.findIndex(producto => producto.id == e.target.parentNode.children[0].children[0].alt);
     if(input.value > 1) {
-        carrito[indexCarrito].cantidad++;
-        carrito[indexCarrito].subtotal = carrito[indexCarrito].precio * carrito[indexCarrito].cantidad;
-        console.log(carrito[indexCarrito].subtotal);
+        CARRITO[indexCarrito].cantidad++;
+        CARRITO[indexCarrito].subtotal = CARRITO[indexCarrito].precio * CARRITO[indexCarrito].cantidad;
+        console.log(CARRITO[indexCarrito].subtotal);
     }
 }
 
@@ -111,6 +117,9 @@ function mensajeSeEliminoExitosamente() {
 
 }
 
+/*
+ * Mensaje por Toastify de que se elimino el producto Correctamente
+*/
 function mensajeSeRealizoLaCompraExitosamente() {
     Swal.fire({
         position: 'center',

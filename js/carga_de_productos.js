@@ -132,7 +132,7 @@ const mensajeSeAgregoExitosamente = () => {
             text: "Producto agregado con exito!",
             destination: "/src/views/carrito.html",
             className: "mensaje-se-agrego-exitosamente",
-            close: true,
+            close: false,
             gravity: "bottom",
             duration: 30000
             }).showToast();

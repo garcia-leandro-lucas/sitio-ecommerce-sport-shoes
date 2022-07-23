@@ -25,7 +25,7 @@ function cargarCarrito(arrayCarritoDeProductos) {
             <th>$${producto.precio}</th>
             <th>${producto.cantidad}</th>
             <th>${producto.subtotal}</th>
-            <th><button class="btn-eliminar" id="${producto.id}"><i class="bi bi-trash-fill"></i></button></th>
+            <th><button class="btn-eliminar btn btn-danger" id="${producto.id}"><i class="bi bi-trash-fill"></i></button></th>
         `;
 
         tbody.appendChild(tbodyRow);
@@ -111,7 +111,7 @@ function mensajeSeEliminoExitosamente() {
         text: "Producto Elimino con exito!",
         destination: "/src/views/carrito.html",
         className: "mensaje-se-elimino-exitosamente",
-        close: true,
+        close: false,
         duration: 30000
     }).showToast();
 

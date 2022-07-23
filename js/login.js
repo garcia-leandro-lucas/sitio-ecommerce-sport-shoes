@@ -1,18 +1,35 @@
 let arrayUsuarios = Usuario;
 const recuperarStorage = JSON.parse(localStorage.getItem("listasDeUsuarios"));
+let InputEmail = document.getElementById('InputEmail').value;
+let InputPassword = document.getElementById('InputPassword').value;
+let check = document.getElementById('check').value;
+let submitLogin = document.getElementById('submitLogin');
+let mensajeDeStatus = document.getElementById('mensajeDeStatus');
 
 if(recuperarStorage) {
     arrayUsuarios = recuperarStorage;
-
-    let InputEmail = document.getElementById('InputEmail').value;
-    let InputPassword = document.getElementById('InputPassword').value;
-    let check = document.getElementById('check').value;
-    let submitLogin = document.getElementById('submitLogin');
-    let mensajeDeStatus = document.getElementById('mensajeDeStatus');
-
     submitLogin.addEventListener('click', checklogin);
-
 }
+
+// if(!recuperarStorage) {
+//     Swal.fire({
+//         title: 'Are you sure?',
+//         text: "You won't be able to revert this!",
+//         icon: 'warning',
+//         showCancelButton: true,
+//         confirmButtonColor: '#3085d6',
+//         cancelButtonColor: '#d33',
+//         confirmButtonText: 'Yes, delete it!'
+//       }).then((result) => {
+//         if (result.isConfirmed) {
+//           Swal.fire(
+//             'Deleted!',
+//             'Your file has been deleted.',
+//             'success'
+//           )
+//         }
+//       })
+// }
 
 /* Acá validamos si existe el usuario que se quiere loguear */
 function checklogin(e) {
@@ -25,10 +42,18 @@ function checklogin(e) {
 
     if(buscarUsuario != undefined) {
         if(buscarUsuario.email === emailIngresado && buscarUsuario.contrasenia ===  passIngresado) {
-            //console.log("Hola"+ buscarUsuario.email );
-            console.log("Hola" +  buscarUsuario.nombre);
-            console.log(mostrar_bienvenida());
-            buscarUsuario.mostrar_bienvenida();
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: `Bienvenido ${buscarUsuario.nombre}. <br> Lo redirigiremos al sitio.`,
+                showConfirmButton: false,
+                timer: 3000
+              })
+
+              setTimeout(function(){
+                window.location.href = "/index.html";   
+                }, 3000);  
+
         }else {
             let textoDeAviso = document.createElement('p');
             textoDeAviso.setAttribute('class', 'mensaje-de-status__datos-incorrectos');

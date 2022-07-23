@@ -14,7 +14,7 @@ let form_registro = document.getElementById('form-registro');
 
 let enviar_validacio_de_registro = document.getElementById('enviarValidacionDeRegistro');
 
-enviar_validacio_de_registro.addEventListener('click', (e) => {// aca conviene colocar el evento submit?
+enviar_validacio_de_registro.addEventListener('click', (e) => {
     e.preventDefault();
     
     if ( es_valido_dato(nombre.value) && es_valido_dato(apellido.value) && es_valido_dato(dni.value) && es_valido_dato(localidad.value) && es_valido_dato(fecha_de_nacimiento.value) && es_valido_dato(genero.value) && es_valido_dato(email.value) && es_valido_dato(contrasenia.value) && es_valido_dato(confirmacion_de_contrasenia.value)) {

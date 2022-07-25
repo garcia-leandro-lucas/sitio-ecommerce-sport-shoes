@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
 
     //import {anadirCarrito} from "./carga_de_productos.js";

@@ -64,7 +64,7 @@ function checklogin(e) {
         let textoDeAviso = document.createElement('p');
         textoDeAviso.setAttribute('class', 'mensaje-de-status__usuario-no-existe');
         textoDeAviso.innerHTML = `El usuario no existe. Si, desea registrarse, presione <a id="registrateAhora" href="register.html"><strong >aquí</strong></a>`;
-        mensajeDeStatus.appendChild(textoDeAviso).hide(3000);
+        mensajeDeStatus.appendChild(textoDeAviso);
     }
 }
 

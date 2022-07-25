@@ -1,3 +1,8 @@
+/*
+ *
+ * Se carga los productos por medio de un template recorriendo un array de productos.
+ * 
+*/
 function cargarCarrito(arrayCarritoDeProductos) {
 
     for( let producto of arrayCarritoDeProductos ) {
@@ -24,6 +29,28 @@ function cargarCarrito(arrayCarritoDeProductos) {
     btnComprar.appendChild(btnDiv);
 }
 
+/* 
+ * Mensaje de corroboración por parte del usuario.
+ * true: si los datos corrobarados por el usuario son correctos.
+ * false: si los datos corrobarados por el usuario son incorrectos.
+ *
+*/
+function mensaje_de_confirmacion(){
+
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Te has registrado con exito!!',
+        showConfirmButton: false,
+        timer: 5500
+      });
+
+    setTimeout(function(){
+        window.location.href = "/src/views/login.html";   
+    }, 3000);
+}
+
 export {
-    cargarCarrito  
+    cargarCarrito,
+    mensaje_de_confirmacion 
 };

@@ -10,29 +10,11 @@ class Usuario {
 		this.email = email; //Còmo validar que ingrese un email correcto?
 		this.contrasenia = contrasenia;
 		this.confirmacion_de_contrasenia = confirmacion_de_contrasenia;
-	}
-
-	/* Muestra un mensaje de bienvenida al  */
-	mostrar_bienvenida() {
-		alert(`Bienvenida/o ${this.nombre} ${this.apellido}.\nYa guardamos tus datos para que puedas realizar la compra de forma segura.`);
-		// Swal.fire({
-		// 	position: 'top-end',
-		// 	icon: 'success',
-		// 	title: `Bienvenida/o ${this.nombre} ${this.apellido}.\nYa guardamos tus datos para que puedas realizar la compra de forma segura.`,
-		// 	showConfirmButton: false,
-		// 	timer: 1500
-		//   })
-		
-	}
+	}		
 }
 /* Fin de Constructor de Usuarios */
 
-// let usuario1 = new Usuario("Leandro", "García", "34 983 639");
-// console.log(usuario1);
-
 /* Inicio Constructor de Productos */
-
-//const producto = new Producto(id_del_producto,image_del_producto, nombre_del_producto,precio_del_producto );
 class Producto {
 	constructor(id, imagen, titulo, precio, cantidad, subtotal) {
 		this.id = id;
@@ -68,5 +50,8 @@ class Producto {
 }
 /* Inicio Constructor de Productos */
 
-// const producto = new Producto("1","Nike","Este es un titulo","Esta es una descripcion corta","Esta es una descripcion larga","20000","running","Hombre","44", "negro");
-// console.log(producto);
+
+export {
+    Usuario,
+    Producto 
+};

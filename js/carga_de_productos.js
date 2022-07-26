@@ -1,3 +1,11 @@
+import {
+    Producto
+} from "./class.js";
+
+import {
+    carritoDeNavegacion
+} from "./funciones.js";
+
 const PRODUCTOS_GRID = document.getElementById('ecommerce-sport-shoes__products-grid');
 const URL_PRODUCTOS = '/js/productos.json';
 let carritoDeCompra = [];
@@ -102,25 +110,25 @@ function anadirCarrito(e) {
 }
 
 
-/*
- * Se genera un contador en el icono del carrito del header
-*/
-function carritoDeNavegacion(carritoDeCompra) {
+// /*
+//  * Se genera un contador en el icono del carrito del header
+// */
+// function carritoDeNavegacion(carritoDeCompra) {
 
-    let carritoCantidad = document.querySelector('.carrito-cantidad');
-    let totalProductos = 0;
+//     let carritoCantidad = document.querySelector('.carrito-cantidad');
+//     let totalProductos = 0;
 
-    for( let producto of carritoDeCompra ) {
-        totalProductos += producto.cantidad;
-    }
+//     for( let producto of carritoDeCompra ) {
+//         totalProductos += producto.cantidad;
+//     }
 
-    if(totalProductos > 0) {
-        carritoCantidad.innerHTML = "";
-        carritoCantidad.innerHTML = `
-        <span class="carrito-cantidad__numero">${totalProductos}</span>
-        `;
-    }
-}
+//     if(totalProductos > 0) {
+//         carritoCantidad.innerHTML = "";
+//         carritoCantidad.innerHTML = `
+//         <span class="carrito-cantidad__numero">${totalProductos}</span>
+//         `;
+//     }
+// }
 
 
 /*

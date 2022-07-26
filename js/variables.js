@@ -16,6 +16,7 @@ let contrasenia = document.getElementById('validacionContrasenia');
 let confirmacion_de_contrasenia = document.getElementById('validacionConfirmacionContrasenia');
 let form_registro = document.getElementById('form-registro');
 let enviar_validacio_de_registro = document.getElementById('enviarValidacionDeRegistro');
+let mensaje = document.getElementById('mensajeDeAlerta');
 /**/
 
 export {
@@ -32,5 +33,6 @@ export {
     contrasenia,
     confirmacion_de_contrasenia,
     form_registro,
-    enviar_validacio_de_registro
+    enviar_validacio_de_registro,
+    mensaje
 }

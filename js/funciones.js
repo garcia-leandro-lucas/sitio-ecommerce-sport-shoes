@@ -50,7 +50,28 @@ function mensaje_de_confirmacion(){
     }, 3000);
 }
 
+/*
+ * Se genera un contador en el icono del carrito del header
+*/
+function carritoDeNavegacion(carritoDeCompra) {
+
+    let carritoCantidad = document.querySelector('.carrito-cantidad');
+    let totalProductos = 0;
+
+    for( let producto of carritoDeCompra ) {
+        totalProductos += producto.cantidad;
+    }
+
+    if(totalProductos > 0) {
+        carritoCantidad.innerHTML = "";
+        carritoCantidad.innerHTML = `
+        <span class="carrito-cantidad__numero">${totalProductos}</span>
+        `;
+    }
+}
+
 export {
     cargarCarrito,
-    mensaje_de_confirmacion 
+    mensaje_de_confirmacion,
+    carritoDeNavegacion
 };

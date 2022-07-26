@@ -10,7 +10,8 @@ import {
     contrasenia,
     confirmacion_de_contrasenia,
     form_registro,
-    enviar_validacio_de_registro
+    enviar_validacio_de_registro,
+    mensaje
 } from "./variables.js";
 
 import {
@@ -36,13 +37,15 @@ enviar_validacio_de_registro.addEventListener('click', (e) => {
             limpiarFormulario();
             mensaje_de_confirmacion();
         }else {
-            Swal.fire({
-                position: 'top-end',
-                icon: 'error',
-                title: 'Por favor, verifica que las contraseñas sean iguales.',
-                showConfirmButton: false,
-                timer: 1500
-              })
+            let mensajeAlert = document.createElement('p');
+            mensajeAlert.innerHTML = "Verifica que las contraseñas sean iguales.";
+            mensajeAlert.style.color = "red";
+            mensajeAlert.style.transition = "all 0.5s ease-out";
+            mensaje.appendChild(mensajeAlert);
+            
+            setTimeout(function(){
+                mensajeAlert.remove();   
+                }, 3000);  
         }
         
         
@@ -50,29 +53,6 @@ enviar_validacio_de_registro.addEventListener('click', (e) => {
             swal("Por favor, debés completar todos los datos que estan solicitados en el formulario");
         }
 })
-
-
-
-/* 
- * Mensaje de corroboración por parte del usuario.
- * true: si los datos corrobarados por el usuario son correctos.
- * false: si los datos corrobarados por el usuario son incorrectos.
- *
-*/
-// function mensaje_de_confirmacion(){
-
-//     Swal.fire({
-//         position: 'center',
-//         icon: 'success',
-//         title: 'Te has registrado con exito!!',
-//         showConfirmButton: false,
-//         timer: 5500
-//       });
-
-//     setTimeout(function(){
-//         window.location.href = "/src/views/login.html";   
-//     }, 3000);
-// }
 
 /* 
  * Valida true o false si los campos a llenar por el usuario esta completados.

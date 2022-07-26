@@ -50,7 +50,6 @@ class Producto {
 }
 /* Inicio Constructor de Productos */
 
-
 export {
     Usuario,
     Producto 

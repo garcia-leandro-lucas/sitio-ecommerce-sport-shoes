@@ -9,6 +9,10 @@ import {
     btnComprar
 } from "./variables.js";
 
+import {
+    carritoDeNavegacion
+} from "./funciones.js";
+
 //console.log(carrito);
 carritoDeNavegacion(CARRITO);
 

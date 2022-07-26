@@ -1,3 +1,5 @@
+'use strict';
+
 /* Login de Usuario para el registro a la página */
 import {
     nombre,

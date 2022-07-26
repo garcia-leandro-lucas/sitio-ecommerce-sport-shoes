@@ -1,3 +1,4 @@
+'use strict';
 /*
  *
  * Se carga los productos por medio de un template recorriendo un array de productos.
@@ -51,6 +52,22 @@ function mensaje_de_confirmacion(){
 }
 
 /*
+ * Mensaje por Toastify de que se Agrego un producto al carrito correctamente
+*/
+const mensajeSeAgregoExitosamente = () => {
+        
+    Toastify({
+        text: "Producto agregado con exito!",
+        destination: "/src/views/carrito.html",
+        className: "mensaje-se-agrego-exitosamente",
+        close: false,
+        gravity: "bottom",
+        duration: 30000
+        }).showToast();
+
+}
+
+/*
  * Se genera un contador en el icono del carrito del header
 */
 function carritoDeNavegacion(carritoDeCompra) {
@@ -73,5 +90,6 @@ function carritoDeNavegacion(carritoDeCompra) {
 export {
     cargarCarrito,
     mensaje_de_confirmacion,
+    mensajeSeAgregoExitosamente,
     carritoDeNavegacion
 };

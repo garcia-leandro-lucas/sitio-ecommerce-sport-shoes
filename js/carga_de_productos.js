@@ -1,13 +1,24 @@
+'use strict';
+/* Inicio: Se importan clases */
 import {
     Producto
 } from "./class.js";
+/* Fin: Se importan clases */
 
+/* Inicio: Se importan constantes */
 import {
-    carritoDeNavegacion
-} from "./funciones.js";
+    PRODUCTOS_GRID,
+    URL_PRODUCTOS
+} from "./constantes.js";
+/* Fin: Se importan constantes */
 
-const PRODUCTOS_GRID = document.getElementById('ecommerce-sport-shoes__products-grid');
-const URL_PRODUCTOS = '/js/productos.json';
+/* Inicio: Se importan funciones */
+import {
+    carritoDeNavegacion,
+    mensajeSeAgregoExitosamente
+} from "./funciones.js";
+/* Fin: Se importan funciones */
+
 let carritoDeCompra = [];
 
 const cargarProductos = () => {
@@ -55,7 +66,7 @@ const cargarProductos = () => {
 
             let productImage = document.querySelectorAll('.product-image');
             productImage.forEach(e => {
-                e.preventDefault();
+                //e.preventDefault();
                 e.addEventListener("mouseover", mostrarIconos);
                 //e.addEventListener("mouseout", ocultarIconos);
             });
@@ -107,43 +118,5 @@ function anadirCarrito(e) {
 
     localStorage.setItem("carritoDeCompra", JSON.stringify(carritoDeCompra));
     carritoDeNavegacion(carritoDeCompra);
-}
-
-
-// /*
-//  * Se genera un contador en el icono del carrito del header
-// */
-// function carritoDeNavegacion(carritoDeCompra) {
-
-//     let carritoCantidad = document.querySelector('.carrito-cantidad');
-//     let totalProductos = 0;
-
-//     for( let producto of carritoDeCompra ) {
-//         totalProductos += producto.cantidad;
-//     }
-
-//     if(totalProductos > 0) {
-//         carritoCantidad.innerHTML = "";
-//         carritoCantidad.innerHTML = `
-//         <span class="carrito-cantidad__numero">${totalProductos}</span>
-//         `;
-//     }
-// }
-
-
-/*
- * Mensaje por Toastify de que se Agrego un producto al carrito correctamente
-*/
-const mensajeSeAgregoExitosamente = () => {
-        
-        Toastify({
-            text: "Producto agregado con exito!",
-            destination: "/src/views/carrito.html",
-            className: "mensaje-se-agrego-exitosamente",
-            close: false,
-            gravity: "bottom",
-            duration: 30000
-            }).showToast();
-
 }
     

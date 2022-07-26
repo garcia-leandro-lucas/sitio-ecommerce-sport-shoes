@@ -1,3 +1,10 @@
+'use strict';
+/* Inicio: Se importan clases */
+import {
+    Usuario
+} from "./class.js";
+/* Fin: Se importan clases */
+
 let arrayUsuarios = Usuario;
 const recuperarStorage = JSON.parse(localStorage.getItem("listasDeUsuarios"));
 let InputEmail = document.getElementById('InputEmail').value;
@@ -11,26 +18,6 @@ if(recuperarStorage) {
     submitLogin.addEventListener('click', checklogin);
 }
 
-// if(!recuperarStorage) {
-//     Swal.fire({
-//         title: 'Are you sure?',
-//         text: "You won't be able to revert this!",
-//         icon: 'warning',
-//         showCancelButton: true,
-//         confirmButtonColor: '#3085d6',
-//         cancelButtonColor: '#d33',
-//         confirmButtonText: 'Yes, delete it!'
-//       }).then((result) => {
-//         if (result.isConfirmed) {
-//           Swal.fire(
-//             'Deleted!',
-//             'Your file has been deleted.',
-//             'success'
-//           )
-//         }
-//       })
-// }
-
 /* Acá validamos si existe el usuario que se quiere loguear */
 function checklogin(e) {
     e.preventDefault();
@@ -43,7 +30,7 @@ function checklogin(e) {
     if(buscarUsuario != undefined) {
         if(buscarUsuario.email === emailIngresado && buscarUsuario.contrasenia ===  passIngresado) {
             Swal.fire({
-                position: 'top-end',
+                position: 'center',
                 icon: 'success',
                 title: `Bienvenido ${buscarUsuario.nombre}. <br> Lo redirigiremos al sitio.`,
                 showConfirmButton: false,

@@ -1,6 +1,6 @@
-$(document).ready(function(){
+'use strict';
 
-    //import {anadirCarrito} from "./carga_de_productos.js";
+$(document).ready(function(){
 
     const productosRelacionados = $('#grid-slick__grid');
     const tituloRelacionados = $('.ecommerce-sport-shoes__grid-slick__title');

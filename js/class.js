@@ -1,3 +1,4 @@
+'use strict';
 /* Inicio de Constructor de Usuarios */
 class Usuario {
 	constructor( nombre, apellido, dni, localidad, fecha_de_nacimiento, genero, email, contrasenia, confirmacion_de_contrasenia ) {

@@ -1,5 +1,17 @@
-let arrayUsuarios = Usuario;
-const recuperarStorage = JSON.parse(localStorage.getItem("listasDeUsuarios"));
+'use strict';
+
+/* Inicio: Se importan variables */
+import {
+    arrayUsuarios
+} from "./variables.js";
+/* Fin: Se importan variables */
+
+/* Inicio: Se importan constantes */
+import {
+    recuperarStorage
+} from "./constantes.js";
+/* Fin: Se importan constantes */
+
 
 if(recuperarStorage) {
     arrayUsuarios = recuperarStorage;

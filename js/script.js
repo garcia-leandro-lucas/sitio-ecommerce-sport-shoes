@@ -1,3 +1,5 @@
+'use strict';
+
 /* script para el slider de la home - banner Home */
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,

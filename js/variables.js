@@ -1,3 +1,11 @@
+'use strict';
+
+/* Inicio: Se importan clases */
+import {
+    Usuario
+} from "./class.js";
+/* Fin: Se importan clases */
+
 /**/
 let tbody = document.querySelector('#tbody');
 let btnComprar = document.querySelector('#btnComprar');
@@ -19,6 +27,10 @@ let enviar_validacio_de_registro = document.getElementById('enviarValidacionDeRe
 let mensaje = document.getElementById('mensajeDeAlerta');
 /**/
 
+/**/
+let arrayUsuarios = Usuario;
+/**/
+
 export {
     tbody,
     btnComprar,
@@ -34,5 +46,6 @@ export {
     confirmacion_de_contrasenia,
     form_registro,
     enviar_validacio_de_registro,
-    mensaje
+    mensaje,
+    arrayUsuarios
 }

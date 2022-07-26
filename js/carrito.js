@@ -1,19 +1,23 @@
-/* Se exportan contantes */
+'use strict';
+/* Inicio: Se importan constantes */
 import {
     CARRITO
 } from "./constantes.js";
+/* Fin: Se importan constantes */
 
-/* Se exportan variables */
+/* Inicio: Se importan variables */
 import {
     tbody,
     btnComprar
 } from "./variables.js";
+/* Fin: Se importan variables */
 
-import {
-    carritoDeNavegacion
-} from "./funciones.js";
+/* Inicio: Se importan funciones */
+// import {
+//     carritoDeNavegacion
+// } from "./funciones.js";
+/* Fin: Se importan funciones */
 
-//console.log(carrito);
 carritoDeNavegacion(CARRITO);
 
 function cargarCarrito(arrayCarritoDeProductos) {
@@ -132,6 +136,26 @@ function mensajeSeRealizoLaCompraExitosamente() {
         showConfirmButton: false,
         timer: 1500
       })
+}
+
+/*
+ * Se genera un contador en el icono del carrito del header
+*/
+function carritoDeNavegacion(carritoDeCompra) {
+
+    let carritoCantidad = document.querySelector('.carrito-cantidad');
+    let totalProductos = 0;
+
+    for( let producto of carritoDeCompra ) {
+        totalProductos += producto.cantidad;
+    }
+
+    if(totalProductos > 0) {
+        carritoCantidad.innerHTML = "";
+        carritoCantidad.innerHTML = `
+        <span class="carrito-cantidad__numero">${totalProductos}</span>
+        `;
+    }
 }
 
 

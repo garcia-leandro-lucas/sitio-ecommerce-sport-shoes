@@ -36,6 +36,19 @@ $(document).ready(function(){
     };
     //productosRelacionados.append(titulo);
     cargarProductos();
+
+    let btnSearch = document.getElementById('btnSearch');
+
+    const mostrarBuscador = (e) => {
+      //console.log(e.target.parentNode.parentNode.children[0]);
+      let buscador = e.target.parentNode.parentNode.children[0];
+      buscador.classList.toggle('active');
+      //buscador.style.display = "block";
+    }
+
+    btnSearch.addEventListener("click", mostrarBuscador);
+
+
 })
 
 

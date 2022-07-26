@@ -5,31 +5,29 @@
 * {
     margin: 0;
     padding: 0;
-    // box-sizing: inherit;
 }
 
-// html {
-//     font-size: var(--medida-raiz);
-// }
+a {
+    color: black;
+}
 
-// header {
-//     @include sizes-w(100%);
-//     position: fixed;
-//     top: 0;
-//     z-index: 50;
-// }
+input, select {
+    border: 1px solid black !important;
+    border-radius: 0px !important;
 
-// body {
-//     font-size: 1.6em;
-// }
+    &:focus {
+        border-color: black !important;
+        outline: 0 !important;
+        box-shadow: 0 0 0 .25rem rgba(0,0,0,.25) !important;
+    }
+}
 
-// a {
-//     text-decoration: none;
-// }
-
-// li {
-//     list-style: none;
-// }
+button.btn.btn-primary {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 0px;
+    width: 100%;
+}
 /*
 * Fin Generales
 *

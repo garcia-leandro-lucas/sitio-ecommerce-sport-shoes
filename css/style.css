@@ -79,6 +79,23 @@
   margin: 0;
   padding: 0; }
 
+a {
+  color: black; }
+
+input, select {
+  border: 1px solid black !important;
+  border-radius: 0px !important; }
+  input:focus, select:focus {
+    border-color: black !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25) !important; }
+
+button.btn.btn-primary {
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 0px;
+  width: 100%; }
+
 /*
 * Fin Generales
 *
@@ -123,8 +140,6 @@ body {
 /**/
 header .navbar.navbar-expand-lg .container .navbar-brand img.logo {
   width: 10rem; }
-header .navbar.navbar-expand-lg .container .navbar-collapse.collapse ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
-  margin: auto; }
 header .navbar.navbar-expand-lg .container .navbar-collapse.collapse form.d-flex a:hover {
   color: black;
   transition: all 0.5s; }
@@ -166,6 +181,10 @@ footer.footer {
     padding: 50px; }
 
 /*Fin footer*/
+.index-ecommerce-sport-shoes header nav .container .navbar-collapse.collapse form .form-control {
+  display: none; }
+.index-ecommerce-sport-shoes header nav .container .navbar-collapse.collapse form .form-control.active {
+  display: block; }
 .index-ecommerce-sport-shoes main .ecommerce-sport-shoes__grid-images {
   display: grid;
   grid-template-columns: 20% 60% 20%;
@@ -177,6 +196,10 @@ footer.footer {
   align-content: center; }
   .index-ecommerce-sport-shoes main .ecommerce-sport-shoes__grid-images .grid-image {
     overflow: hidden; }
+    .index-ecommerce-sport-shoes main .ecommerce-sport-shoes__grid-images .grid-image img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%; }
 .index-ecommerce-sport-shoes main .ecommerce-sport-shoes__grid-slick {
   margin-bottom: 50px; }
   .index-ecommerce-sport-shoes main .ecommerce-sport-shoes__grid-slick .ecommerce-sport-shoes__grid-slick__title h4 {
@@ -219,6 +242,9 @@ footer.footer {
     text-decoration: none; }
     #mensajeDeStatus p.mensaje-de-status__usuario-no-existe a strong, #mensajeDeStatus .mensaje-de-status__datos-incorrectos a strong {
       color: black; }
+
+.container.ecommerce-sport-shoes__form-login {
+  margin-bottom: 100px; }
 
 .productos-ecommerce-sport-shoes main section.ecommerce-sport-shoes__banner {
   background-image: url("../../src/assets/images/banner/collection.webp");
@@ -292,7 +318,8 @@ img.image-carrito {
 
 .container.ecommerce-sport-shoes__products-carrito {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 100px; }
   .container.ecommerce-sport-shoes__products-carrito div#btnComprar {
     display: flex;
     justify-content: flex-end; }

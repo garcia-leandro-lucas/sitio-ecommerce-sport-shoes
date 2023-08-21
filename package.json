@@ -4,20 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/garcia-leandro-lucas/sitio-ecommerce-sport-shoes.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/garcia-leandro-lucas/sitio-ecommerce-sport-shoes/issues"
-  },
-  "homepage": "https://github.com/garcia-leandro-lucas/sitio-ecommerce-sport-shoes#readme",
   "devDependencies": {
-    "node-sass": "^7.0.1",
-    "nodemon": "^2.0.16"
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1"
   }
 }

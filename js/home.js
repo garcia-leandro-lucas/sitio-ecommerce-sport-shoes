@@ -10,7 +10,7 @@ $(document).ready(function(){
     tituloRelacionados.append(titulo);
 
     const carrito = JSON.parse(localStorage.getItem("carritoDeCompra"));
-    const URL_PRODUCTOS = '/js/productos.json';
+    const URL_PRODUCTOS = 'http://127.0.0.1:5500/js/productos.json';
     
     const cargarProductos = () => {
         fetch(URL_PRODUCTOS)

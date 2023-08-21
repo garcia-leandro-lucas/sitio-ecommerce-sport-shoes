@@ -15,7 +15,7 @@ const IVA = 0.21;
 const CARRITO = JSON.parse(localStorage.getItem("carritoDeCompra"));
 
 const PRODUCTOS_GRID = document.getElementById('ecommerce-sport-shoes__products-grid');
-const URL_PRODUCTOS = '/js/productos.json';
+const URL_PRODUCTOS = 'http://127.0.0.1:5500/js/productos.json';
 
 const recuperarStorage = JSON.parse(localStorage.getItem("listasDeUsuarios"));
 

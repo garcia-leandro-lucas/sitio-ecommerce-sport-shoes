@@ -10,7 +10,7 @@
         "genero": "Unisex",
         "talle": [40, 41, 42, 43, 44, 45],
         "color": ["Negro", "Blanco", "Azul"],
-        "imagen": "/src/assets/images/productos/zapatillas-air-jordan-1-mid-barely-orange.jpeg"
+        "imagen": "http://127.0.0.1:5500/src/assets/images/productos/zapatillas-air-jordan-1-mid-barely-orange.jpeg"
     },
     {
         "id": 2,
@@ -23,7 +23,7 @@
         "genero": "Unisex",
         "talle": [40, 41, 42, 43, 44, 45],
         "color": ["Negro", "Blanco", "Azul"],
-        "imagen": "/src/assets/images/productos/zapatillas-nike-air-force-1-07-essential.jpeg"
+        "imagen": "http://127.0.0.1:5500/src/assets/images/productos/zapatillas-nike-air-force-1-07-essential.jpeg"
     },
     {
         "id": 3,
@@ -36,7 +36,7 @@
         "genero": "Unisex",
         "talle": [40, 41, 42, 43, 44, 45],
         "color": ["Gris", "Turquesa ", "Azul"],
-        "imagen": "/src/assets/images/productos/zapatillas-nike-air-force-1-07-Se.jpeg"
+        "imagen": "http://127.0.0.1:5500/src/assets/images/productos/zapatillas-nike-air-force-1-07-Se.jpeg"
     }
     ,
     {
@@ -50,7 +50,7 @@
         "genero": "Unisex",
         "talle": [40, 41, 42, 43, 44, 45],
         "color": ["Gris", "Turquesa ", "Azul"],
-        "imagen": "/src/assets/images/productos/zapatillas-nike-air-force-2-07-essential.jpeg"
+        "imagen": "http://127.0.0.1:5500/src/assets/images/productos/zapatillas-nike-air-force-2-07-essential.jpeg"
     }
     ,
     {
@@ -64,7 +64,7 @@
         "genero": "Unisex",
         "talle": [40, 41, 42, 43, 44, 45],
         "color": ["Gris", "Turquesa ", "Azul"],
-        "imagen": "/src/assets/images/productos/zapatillas-nike-Air-Force-2-07-lv8.jpeg"
+        "imagen": "http://127.0.0.1:5500/src/assets/images/productos/zapatillas-nike-Air-Force-2-07-lv8.jpeg"
     }
     ,
     {
@@ -78,7 +78,7 @@
         "genero": "Unisex",
         "talle": [40, 41, 42, 43, 44, 45],
         "color": ["Gris", "Turquesa ", "Azul"],
-        "imagen": "/src/assets/images/productos/zapatillas-nike-air-force-fontanka.jpeg"
+        "imagen": "http://127.0.0.1:5500/src/assets/images/productos/zapatillas-nike-air-force-fontanka.jpeg"
     },
     {
         "id": 7,
@@ -91,7 +91,7 @@
         "genero": "Unisex",
         "talle": [40, 41, 42, 43, 44, 45],
         "color": ["Gris", "Turquesa ", "Azul"],
-        "imagen": "/src/assets/images/productos/zapatillas-nike-air-max-90-premium.jpeg"
+        "imagen": "http://127.0.0.1:5500/src/assets/images/productos/zapatillas-nike-air-max-90-premium.jpeg"
     },
     {
         "id": 8,
@@ -104,7 +104,7 @@
         "genero": "Unisex",
         "talle": [40, 41, 42, 43, 44, 45],
         "color": ["Gris", "Turquesa ", "Azul"],
-        "imagen": "/src/assets/images/productos/zapatillas-nike-air-max-90-se.jpeg"
+        "imagen": "http://127.0.0.1:5500/src/assets/images/productos/zapatillas-nike-air-max-90-se.jpeg"
     },
     {
         "id": 9,
@@ -117,7 +117,7 @@
         "genero": "Unisex",
         "talle": [40, 41, 42, 43, 44, 45],
         "color": ["Gris", "Turquesa ", "Azul"],
-        "imagen": "/src/assets/images/productos/zapatillas-nike-blazer-mid-77.jpeg"
+        "imagen": "http://127.0.0.1:5500/src/assets/images/productos/zapatillas-nike-blazer-mid-77.jpeg"
     },
     {
         "id": 10,
@@ -130,7 +130,7 @@
         "genero": "Unisex",
         "talle": [40, 41, 42, 43, 44, 45],
         "color": ["Gris", "Turquesa ", "Azul"],
-        "imagen": "/src/assets/images/productos/zapatillas-nike-blazer-mid-77-lx.jpeg"
+        "imagen": "http://127.0.0.1:5500/src/assets/images/productos/zapatillas-nike-blazer-mid-77-lx.jpeg"
     },
     {
         "id": 11,
@@ -143,7 +143,7 @@
         "genero": "Unisex",
         "talle": [40, 41, 42, 43, 44, 45],
         "color": ["Gris", "Turquesa ", "Azul"],
-        "imagen": "/src/assets/images/productos/zapatillas-nike-blazer-mid-78.jpeg"
+        "imagen": "http://127.0.0.1:5500/src/assets/images/productos/zapatillas-nike-blazer-mid-78.jpeg"
     },
     {
         "id": 12,
@@ -156,7 +156,7 @@
         "genero": "Unisex",
         "talle": [40, 41, 42, 43, 44, 45],
         "color": ["Gris", "Turquesa ", "Azul"],
-        "imagen": "/src/assets/images/productos/zapatillas-nike-court-legacy-canvas.jpeg"
+        "imagen": "http://127.0.0.1:5500/src/assets/images/productos/zapatillas-nike-court-legacy-canvas.jpeg"
     },
     {
         "id": 13,
@@ -169,7 +169,7 @@
         "genero": "Unisex",
         "talle": [40, 41, 42, 43, 44, 45],
         "color": ["Gris", "Turquesa ", "Azul"],
-        "imagen": "/src/assets/images/productos/zapatillas-nike-crater-impact.jpeg"
+        "imagen": "http://127.0.0.1:5500/src/assets/images/productos/zapatillas-nike-crater-impact.jpeg"
     },
     {
         "id": 14,
@@ -182,7 +182,7 @@
         "genero": "Unisex",
         "talle": [40, 41, 42, 43, 44, 45],
         "color": ["Gris", "Turquesa ", "Azul"],
-        "imagen": "/src/assets/images/productos/zapatillas-nike-dunk-low-disrupt-2.jpeg"
+        "imagen": "http://127.0.0.1:5500/src/assets/images/productos/zapatillas-nike-dunk-low-disrupt-2.jpeg"
     },
     {
         "id": 15,
@@ -195,7 +195,7 @@
         "genero": "Unisex",
         "talle": [40, 41, 42, 43, 44, 45],
         "color": ["Gris", "Turquesa ", "Azul"],
-        "imagen": "/src/assets/images/productos/zapatillas-nike-lebron-xix-low.jpeg"
+        "imagen": "http://127.0.0.1:5500/src/assets/images/productos/zapatillas-nike-lebron-xix-low.jpeg"
     },
     {
         "id": 16,
@@ -208,7 +208,7 @@
         "genero": "Unisex",
         "talle": [40, 41, 42, 43, 44, 45],
         "color": ["Gris", "Turquesa ", "Azul"],
-        "imagen": "/src/assets/images/productos/zapatillas-nike-pre-love.jpeg"
+        "imagen": "http://127.0.0.1:5500/src/assets/images/productos/zapatillas-nike-pre-love.jpeg"
     },
     {
         "id": 17,
@@ -221,6 +221,6 @@
         "genero": "Unisex",
         "talle": [40, 41, 42, 43, 44, 45],
         "color": ["Gris", "Turquesa ", "Azul"],
-        "imagen": "/src/assets/images/productos/zapatillas-zike-air-max-furyosa.jpeg"
+        "imagen": "http://127.0.0.1:5500/src/assets/images/productos/zapatillas-zike-air-max-furyosa.jpeg"
     }
 ]

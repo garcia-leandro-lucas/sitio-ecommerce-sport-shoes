@@ -1,0 +1,39 @@
+:root {
+  scroll-behavior: smooth;
+  /*  Medidas  */
+  --medida-raiz: 62.5%;
+  --swiper-navigation-size: 20px;
+  /*  Fin de Medidas  */
+
+  /* Colores */
+  --color-blanco: #ffffff;
+  --color-negro: #000000;
+  --color-rojo-coorporativo: #ff0024;
+  --color-rojo: #ff0000;
+  --color-violeta: #a402b3;
+  --color-violeta-medio: #7c0087;
+  --color-bordo: #7b0325;
+  --color-bordo-medio: #d00202;
+  --color-amarillo: #fbb900;
+  --color-amarillo-medio: #e3a72b;
+  // --color-amarillo-opacidad: hsla(44, 100%, 49%, 0.3);
+  // --color-transparente: hsla(360, 100%, 100%, 0);
+  --color-fucsia: #f101ff;
+  --color-azul: #0076fb;
+  --color-azul-fuerte: #0029fb;
+  --color-verde-check: #00CB00;
+  --color-rojo-error: #F90000;
+  --color-amarillo-star:#ffec51;
+  /* Fin de Colores */
+
+  /*  Fuentes  */
+  --fuente-fave-condensed: Fave Condensed One Pro;
+  --fuente-ombudsman-stencil: Ombudsman Stencil;
+  --fuente-roboto-regular: Roboto Regular;
+  --fuente-roboto-medium: Roboto Medium;
+  --fuente-roboto-bold: Roboto Bold;
+  --fuente-roboto-light: Roboto Light;
+  --fuente-roboto-condensed-regular: Roboto Condensed Regular;
+  --fuente-roboto-condensed-bold: Roboto Condensed Bold;
+  /*  Fin de Fuentes  */
+}

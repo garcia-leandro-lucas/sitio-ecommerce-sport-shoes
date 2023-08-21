@@ -34,68 +34,66 @@
         <title>Sitio Oficial | Venta de calzados deportivos</title>
     </head>
     <body class="login-ecommerce-sport-shoes">
-        <header>
-          <nav class="navbar navbar-expand-lg">
-            <div class="container">
-              <a class="navbar-brand" href="../../index.html">
-                <img class="logo" src="../../src/assets/images/logos/logo.webp" alt="">
-              </a>
-              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="productos.html">Shop</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Género
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Femenino</a></li>
-                      <li><a class="dropdown-item" href="#">Masculino</a></li>
-                      <li><a class="dropdown-item" href="#">Niños</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link">Page</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search" id="buscador">
-                  <a href="" >
-                    <div class="btn">
-                      <p id=""></p>
-                      <i class="bi bi-search"></i>
-                    </div>
+      <header>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand" href="../../index.html">
+              <img class="logo" src="../assets/images/logos/logo-nike.svg" alt="Logo Nike">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Destacados</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="productos.html">Productos</a>
+                </li> 
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Género
                   </a>
-                  <a href="" >
-                    <div class="btn">
-                      <p id=""></p>
-                      <i class="bi bi-person"></i>
-                    </div>
-                  </a>
-                  <a href="" >
-                    <div class="btn">
-                      <p id=""></p>
-                      <i class="bi bi-heart"></i>
-                    </div>
-                  </a>
-                  <a href="carrito.html" >
-                    <div class="btn">
-                      <p class="carrito-cantidad"></p>
-                      <i class="bi bi-bag"></i>
-                    </div>
-                  </a>
-                </form>
-              </div>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Hombre</a></li>
+                    <li><a class="dropdown-item" href="#">Mujer</a></li>
+                    <li><a class="dropdown-item" href="#">Niño/a</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Accesorios</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search" id="buscador">
+                  <div class="btn">
+                    <p id=""></p>
+                    <i class="bi bi-search" id="btnSearch"></i>
+                  </div>
+                <a href="login.html" >
+                  <div class="btn">
+                    <p id=""></p>
+                    <i class="bi bi-person"></i>
+                  </div>
+                </a>
+                <a href="" >
+                  <div class="btn">
+                    <p id=""></p>
+                    <i class="bi bi-heart"></i>
+                  </div>
+                </a>
+                <a href="carrito.html" >
+                  <div class="btn btn-carrito">
+                    <p class="carrito-cantidad"></p>
+                    <i class="bi bi-bag"></i>
+                  </div>
+                </a>
+              </form>
             </div>
-          </nav>
-        </header>
+          </div>
+        </nav>
+      </header>
         <main>
           <section class="ecommerce-sport-shoes__banner">
             <div class="banner-image">
@@ -166,8 +164,50 @@
               </form>
           </section>
         </main>
-        <footer>
-        
+        <footer class="footer">
+          <div class="container">
+            <div class="row align-items-start">
+              <div class="col logo">
+                <a class="navbar-brand" href="../../index.html">
+                  <img class="logo" src="../assets/images/logos/logo-nike.svg" alt="Logo Nike">
+                </a>
+              </div>
+              <div class="col nosotros">
+                <h3>Nosotros</h3>
+                <ul>
+                  <li>Acerca de Nike</li>
+                  <li>Trabaja con nosotros</li>
+                  <li>Locales</li>
+                </ul>
+              </div>
+              <div class="col atencion-al-cliente">
+                <h3>Atención al cliente</h3>
+                <ul>
+                  <li>Contacto</li>
+                  <li>Consultas</li>
+                  <li>Tabla de talles</li>
+                  <li>Cancelá tu compra</li>
+                </ul>
+              </div>
+              <div class="col contacto">
+                <h3>Contactanos</h3>
+                <ul>
+                  <li class="instagram">
+                    <img src="../assets/images/icons/instagram.svg" alt="Logo de instagram">
+                  </li>
+                  <li class="facebook">
+                    <img src="../assets/images/icons/facebook-f.svg" alt="Logo de facebook">
+                  </li>
+                  <li class="twitter">
+                    <img src="../assets/images/icons/twitter.svg" alt="Logo de twitter">
+                  </li>
+                  <li class="youtube">
+                    <img src="../assets/images/icons/youtube.svg" alt="Logo de youtube">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </footer>
         
         <!-- script bootstrap -->
@@ -187,6 +227,7 @@
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
        <!-- Inicio de Script -->
+       <script src="../../js/search.js"></script>
        <script type="module" src="../../js/class.js"></script>
        <script type="module" src="../../js/variables.js"></script>
        <script type="module" src="../../js/function.js"></script>

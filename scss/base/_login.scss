@@ -33,12 +33,12 @@
     p.mensaje-de-status__usuario-no-existe, .mensaje-de-status__datos-incorrectos {
         padding: 5px;
         text-align: center;
-        color: red;
+        color: var(--color-rojo);
 
         a {
             text-decoration: none;
             strong {
-                color: black;
+                color: var(--color-negro);
             }
         }
     }

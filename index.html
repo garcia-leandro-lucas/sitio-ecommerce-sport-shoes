@@ -1,193 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-        <!-- Link Swiper's CSS -->
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"
-        />
-        <!-- Css CDN bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- AOS -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/2027f4984e.js" crossorigin="anonymous"></script>
-        <!-- CDN sweetalert -->
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-        <!-- Icons CDN bootstrap -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-        <!-- CDN slick -->
-        <!-- Add the slick-theme.css if you want default styling -->
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-        <!-- Add the slick-theme.css if you want default styling -->
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-        <!-- Css -->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <!-- Meta description -->
-        <meta name="description" content="">
-        <!-- Meta Keywords  -->
-        <meta name="keywords" content="">
-        <!-- Protocolo Open Graph -->
-        <meta property="og:title" content="">
-        <meta property="og:url" content="">
-        <meta property="og:image" content="">
-        <meta property="og:description" content="">
-        <script src="https://kit.fontawesome.com/2027f4984e.js" crossorigin="anonymous"></script>
-        
-        <title>Sitio Oficial | Venta de calzados deportivos</title>
-    </head>
-    <body class="index-ecommerce-sport-shoes">
-        <header>
-          <nav class="navbar navbar-expand-lg">
-            <div class="container">
-              <a class="navbar-brand" href="index.html">
-                <img class="logo" src="src/assets/images/logos/logo.webp" alt="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- Css CDN bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/2027f4984e.js" crossorigin="anonymous"></script>
+  <!-- CDN sweetalert -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!-- Icons CDN bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <!-- CDN slick -->
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <!-- Css -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Meta description -->
+  <meta name="description" content="">
+  <!-- Meta Keywords  -->
+  <meta name="keywords" content="">
+  <meta property="og:title" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="">
+  <script src="https://kit.fontawesome.com/2027f4984e.js" crossorigin="anonymous"></script>
+
+  <title>Sitio Oficial | Venta de calzados deportivos</title>
+</head>
+
+<body class="index-ecommerce-sport-shoes">
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img class="logo" src="src/assets/images/logos/logo-nike.svg" alt="Logo Nike">
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Destacados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="src/views/productos.html">Productos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Género
               </a>
-              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="src/views/productos.html">Shop</a>
-                  </li> 
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Género
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Femenino</a></li>
-                      <li><a class="dropdown-item" href="#">Masculino</a></li>
-                      <li><a class="dropdown-item" href="#">Niños</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link">Page</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search" id="buscador">
-                    <div class="btn">
-                      <p id=""></p>
-                      <i class="bi bi-search" id="btnSearch"></i>
-                    </div>
-                  <a href="/src/views/login.html" >
-                    <div class="btn">
-                      <p id=""></p>
-                      <i class="bi bi-person"></i>
-                    </div>
-                  </a>
-                  <a href="" >
-                    <div class="btn">
-                      <p id=""></p>
-                      <i class="bi bi-heart"></i>
-                    </div>
-                  </a>
-                  <a href="src/views/carrito.html" >
-                    <div class="btn">
-                      <p class="carrito-cantidad"></p>
-                      <i class="bi bi-bag"></i>
-                    </div>
-                  </a>
-                </form>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Hombre</a></li>
+                <li><a class="dropdown-item" href="#">Mujer</a></li>
+                <li><a class="dropdown-item" href="#">Niño/a</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Accesorios</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search" id="buscador">
+            <div class="btn">
+              <p id=""></p>
+              <i class="bi bi-search" id="btnSearch"></i>
+            </div>
+            <a href="/src/views/login.html">
+              <div class="btn">
+                <p id=""></p>
+                <i class="bi bi-person"></i>
               </div>
-            </div>
-          </nav>
-        </header>
-        <main>
-          <section class="ecommerce-sport-shoes__carrousel">
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="src/assets/images/banner/banenr-header-1.webp" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="src/assets/images/banner/banenr-header-1.webp" alt="">
-                </div>
-              </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </section>
-
-          <section class="container ecommerce-sport-shoes__grid-images">
-            <div class="grid-image">
-              <img src="src/assets/images/card-shoes/ba3.webp" alt="">
-            </div>
-            <div class="grid-image">
-              <img src="src/assets/images/card-shoes/ba5.webp" alt="">
-            </div>
-            <div class="grid-image">
-              <img src="src/assets/images/card-shoes/ba4.webp" alt="">
-            </div>
-          </section>
-
-          <!-- <section class="container ecommerce-sport-shoes__grid-slick">
-            <div class="ecommerce-sport-shoes__grid-slick__title"></div>
-            <div  id="grid-slick__grid"></div>
-          </section> -->
-        </main>
-        <footer class="footer">
-          <nav class="navbar navbar-expand-lg">
-            <div class="container">
-              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="src/views/productos.html">Shop</a>
-                  </li> 
-                  <li class="nav-item">
-                    <a class="nav-link">Page</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-          <div class="footer__logo">
-            <a class="navbar-brand" href="index.html">
-              <img class="logo" src="src/assets/images/logos/image-bn.webp" alt="">
             </a>
+            <a href="">
+              <div class="btn">
+                <p id=""></p>
+                <i class="bi bi-heart"></i>
+              </div>
+            </a>
+            <a href="src/views/carrito.html">
+              <div class="btn btn-carrito">
+                <p class="carrito-cantidad"></p>
+                <i class="bi bi-bag"></i>
+              </div>
+            </a>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="ecommerce-sport-shoes__carrousel">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="src/assets/images/banner/nike-1.webp" alt="Zapatillas de nike">
           </div>
-        </footer>
-        
-        <!-- script bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-        <!-- Swiper JS -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <!-- CDN toastify -->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-        <!-- CDN jquery -->
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <!-- CDN slick -->
-        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <!-- script AOS -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <!-- Inicialización de AOS -->
-        <script>AOS.init();</script>
+          <div class="swiper-slide">
+            <img src="src/assets/images/banner/nike-2.webp" alt="Zapatillas de nike">
+          </div>
+          <div class="swiper-slide">
+            <img src="src/assets/images/banner/nike-3.webp" alt="Zapatillas de nike">
+          </div>
+          <div class="swiper-slide">
+            <img src="src/assets/images/banner/nike-4.webp" alt="Zapatillas de nike">
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
 
-        <!-- Script -->
-        <script type="module" src="js/class.js"></script>
-        <script type="module" src="js/variables.js"></script>
-        <script type="module" src="js/constantes.js"></script>
-        <script src="js/home.js"></script>
-        <script src="js/productos.json"></script>
-        <script src="js/script.js"></script>
-        <!-- <script type="module" src="js/registro-de-usuario.js"></script> -->
-        <!-- <script src="js/registro-check.js"></script>
-        <script src="js/carga_de_productos.js"></script>
-        <script src="js/carrito.js"></script> -->
+    <section class="container container-parallax">
+      <div class="row">
+        <div class="col-6">
+          <h3>New Jordan 6 Rings</h3>
+          <p>Construido con elementos de las siluetas con las que Jordan ganó un campeonato de la NBA, el acertadamente
+            llamado Jordan 6 Rings puede no ser nuevo en el catálogo híbrido de la marca, pero el conjunto de caña alta
+            continúa vigorizando las historias de los años 90, como la vestimenta reciente de la pareja en tonos
+            familiares "Cement Grey".</p>
+          <a href="">
+            <span>Ver collección</span>
+          </a>
+        </div>
 
-    </body>
+        <div class="col-6 container-parallax-scene" id="scene">
+          <div data-depth="0.2" class="content-text h3">
+            <h3>Air</h3>
+          </div>
+          <div data-depth="0.4" content-img>
+            <img src="src/assets/images/zapa@3x.png" alt="Zapatillas de nike" style="width: 100%;">
+          </div>
+          <div data-depth="0.6" class="content-text h4">
+            <h4>Jordan</h4>
+          </div>
+          <div data-depth="0.8" class="content-text h5">
+            <h5>6 Ring</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col logo">
+          <a class="navbar-brand" href="index.html">
+            <img class="logo" src="src/assets/images/logos/logo-nike.svg" alt="Logo Nike">
+          </a>
+        </div>
+        <div class="col nosotros">
+          <h3>Nosotros</h3>
+          <ul>
+            <li>Acerca de Nike</li>
+            <li>Trabaja con nosotros</li>
+            <li>Locales</li>
+          </ul>
+        </div>
+        <div class="col atencion-al-cliente">
+          <h3>Atención al cliente</h3>
+          <ul>
+            <li>Contacto</li>
+            <li>Consultas</li>
+            <li>Tabla de talles</li>
+            <li>Cancelá tu compra</li>
+          </ul>
+        </div>
+        <div class="col contacto">
+          <h3>Contactanos</h3>
+          <ul>
+            <li class="instagram">
+              <img src="src/assets/images/icons/instagram.svg" alt="Logo de instagram">
+            </li>
+            <li class="facebook">
+              <img src="src/assets/images/icons/facebook-f.svg" alt="Logo de facebook">
+            </li>
+            <li class="twitter">
+              <img src="src/assets/images/icons/twitter.svg" alt="Logo de twitter">
+            </li>
+            <li class="youtube">
+              <img src="src/assets/images/icons/youtube.svg" alt="Logo de youtube">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- parallax -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <!-- script bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
+  </script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- CDN toastify -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <!-- CDN jquery -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <!-- CDN slick -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- script AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Inicialización de AOS -->
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Script -->
+  <script src="js/search.js"></script>
+  <script type="module" src="js/class.js"></script>
+  <script type="module" src="js/variables.js"></script>
+  <script type="module" src="js/constantes.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/productos.json"></script>
+  <script src="js/script.js"></script>
+  <script type="module" src="js/function.js"></script>
+  <script src="js/productos.json"></script>
+  <script type="module" src="js/carga_de_productos.js"></script>
+  <script type="module" src="js/carrito.js"></script>
+
+  <script>
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene);
+  </script>
+
+</body>
+
 </html>

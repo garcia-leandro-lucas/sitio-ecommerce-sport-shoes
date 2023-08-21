@@ -1,3 +1,5 @@
+/* 2 */
+/* 1 */
 /*  Inicio de fuentes externas  */
 @font-face {
   font-family: 'Fave Condensed One Pro';
@@ -69,8 +71,6 @@
   --fuente-roboto-condensed-bold: Roboto Condensed Bold;
   /*  Fin de Fuentes  */ }
 
-/* 2 */
-/* 1 */
 /*
 * Inicio Generales
 *
@@ -100,6 +100,7 @@ button.btn.btn-primary {
 * Fin Generales
 *
 */
+/* Inicio: estilos generales */
 html,
 body {
   position: relative;
@@ -112,7 +113,7 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: var(--color-blanco);
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -137,69 +138,127 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
-/**/
-header .navbar.navbar-expand-lg .container .navbar-brand img.logo {
-  width: 10rem; }
-header .navbar.navbar-expand-lg .container .navbar-collapse.collapse form.d-flex a:hover {
-  color: black;
-  transition: all 0.5s; }
-header .navbar.navbar-expand-lg .container .navbar-collapse.collapse form.d-flex a div.btn {
+/* Fin: estilos generales */
+/* Inicio: header */
+header .navbar .container .navbar-brand img.logo {
+  width: 3rem; }
+header .navbar .container .navbar-collapse form.d-flex .form-control {
+  display: none; }
+header .navbar .container .navbar-collapse form.d-flex .form-control.active {
+  display: block; }
+header .navbar .container .navbar-collapse form.d-flex a {
+  display: flex;
+  align-items: center;
+  text-decoration: none; }
+  header .navbar .container .navbar-collapse form.d-flex a:hover {
+    color: var(--color-negro);
+    transition: all 0.5s; }
+  header .navbar .container .navbar-collapse form.d-flex a .btn-carrito {
+    position: relative;
+    display: flex;
+    align-items: center; }
+    header .navbar .container .navbar-collapse form.d-flex a .btn-carrito .carrito-cantidad {
+      background-color: var(--color-rojo);
+      border-radius: 50px;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      line-height: 1.4;
+      color: var(--color-blanco);
+      font-size: 15px; }
+header .navbar .container .navbar-collapse form.d-flex .btn {
   position: relative;
   display: flex;
-  flex-flow: row-reverse; }
-  header .navbar.navbar-expand-lg .container .navbar-collapse.collapse form.d-flex a div.btn:hover {
+  align-items: center; }
+  header .navbar .container .navbar-collapse form.d-flex .btn:hover {
     border-color: #6c6c6c12;
     box-shadow: 2px 2px 15px 2px #8080801a;
     transition: all 0.5s; }
-  header .navbar.navbar-expand-lg .container .navbar-collapse.collapse form.d-flex a div.btn p.carrito-cantidad span.carrito-cantidad__numero {
-    background-color: red;
-    border-radius: 100px;
-    width: 25px;
-    padding: 3px;
-    position: absolute;
-    right: -10px;
-    top: 0;
-    font-size: 12px;
-    color: white; }
-  header .navbar.navbar-expand-lg .container .navbar-collapse.collapse form.d-flex a div.btn i {
+  header .navbar .container .navbar-collapse form.d-flex .btn i {
     font-size: 1.5em; }
+  header .navbar .container .navbar-collapse form.d-flex .btn i.bi.bi-search {
+    font-size: 1.3em; }
+  header .navbar .container .navbar-collapse form.d-flex .btn i.bi.bi-person {
+    font-size: 1.75em; }
+  header .navbar .container .navbar-collapse form.d-flex .btn i.bi.bi-bag {
+    font-size: 1.4em; }
 
-/**/
+/* Fin: header */
 /*Inicio footer*/
-footer.footer {
-  background-color: black;
+.footer {
+  background-color: var(--color-negro);
   margin: 0 auto;
-  text-align: center; }
-  footer.footer nav #navbarSupportedContent ul.navbar-nav {
+  text-align: center;
+  padding: 20px 0; }
+  .footer .container .row .col {
+    text-align: left; }
+    .footer .container .row .col .navbar-brand .logo {
+      width: 3rem;
+      -webkit-filter: invert(100%);
+      filter: invert(100%); }
+    .footer .container .row .col h3 {
+      font-size: 1rem;
+      color: var(--color-blanco); }
+    .footer .container .row .col ul {
+      list-style: none;
+      padding-left: 0; }
+      .footer .container .row .col ul li {
+        color: var(--color-blanco);
+        font-size: 0.8rem; }
+  .footer .container .row .col.contacto ul {
     display: flex;
-    justify-content: center;
-    margin: 0 auto; }
-    footer.footer nav #navbarSupportedContent ul.navbar-nav li a {
-      color: white; }
-  footer.footer .footer__logo .navbar-brand img.logo {
-    width: 20%;
-    padding: 50px; }
+    align-items: center; }
+    .footer .container .row .col.contacto ul li {
+      padding: 0 10px; }
+      .footer .container .row .col.contacto ul li img {
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
+        width: 1.5rem; }
+    .footer .container .row .col.contacto ul li.facebook img {
+      width: 1rem; }
 
 /*Fin footer*/
-.index-ecommerce-sport-shoes header nav .container .navbar-collapse.collapse form .form-control {
-  display: none; }
-.index-ecommerce-sport-shoes header nav .container .navbar-collapse.collapse form .form-control.active {
-  display: block; }
-.index-ecommerce-sport-shoes main .ecommerce-sport-shoes__grid-images {
-  display: grid;
-  grid-template-columns: 20% 60% 20%;
-  grid-template-rows: 300px;
-  margin-bottom: 100px;
-  margin-top: 100px;
-  gap: 10px;
-  justify-content: center;
-  align-content: center; }
-  .index-ecommerce-sport-shoes main .ecommerce-sport-shoes__grid-images .grid-image {
-    overflow: hidden; }
-    .index-ecommerce-sport-shoes main .ecommerce-sport-shoes__grid-images .grid-image img {
-      object-fit: cover;
-      width: 100%;
-      height: 100%; }
+.index-ecommerce-sport-shoes main .ecommerce-sport-shoes__carrousel {
+  height: 500px; }
+  .index-ecommerce-sport-shoes main .ecommerce-sport-shoes__carrousel .swiper .swiper-pagination .swiper-pagination-bullet {
+    width: 50px;
+    height: 5px;
+    border-radius: inherit; }
+  .index-ecommerce-sport-shoes main .ecommerce-sport-shoes__carrousel .swiper .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--color-blanco); }
+.index-ecommerce-sport-shoes main .container-parallax {
+  margin-top: 100px; }
+  .index-ecommerce-sport-shoes main .container-parallax .container-parallax-scene {
+    height: 500px; }
+    .index-ecommerce-sport-shoes main .container-parallax .container-parallax-scene .content-text {
+      width: -webkit-fill-available; }
+      .index-ecommerce-sport-shoes main .container-parallax .container-parallax-scene .content-text h3 {
+        font-family: var(--fuente-roboto-bold);
+        position: absolute;
+        font-size: 15rem;
+        color: yellow;
+        left: -40px;
+        top: -40px; }
+      .index-ecommerce-sport-shoes main .container-parallax .container-parallax-scene .content-text h4 {
+        font-family: var(--fuente-roboto-bold);
+        position: absolute;
+        font-size: 8rem;
+        color: var(--color-rojo);
+        left: 130px;
+        top: 200px; }
+      .index-ecommerce-sport-shoes main .container-parallax .container-parallax-scene .content-text h5 {
+        font-family: var(--fuente-roboto-bold);
+        font-size: 2rem;
+        color: orange;
+        position: absolute;
+        top: 320px;
+        left: 400px; }
+    .index-ecommerce-sport-shoes main .container-parallax .container-parallax-scene .content-text.h4 {
+      position: absolute; }
+    .index-ecommerce-sport-shoes main .container-parallax .container-parallax-scene .content-text.h5 {
+      position: absolute; }
 .index-ecommerce-sport-shoes main .ecommerce-sport-shoes__grid-slick {
   margin-bottom: 50px; }
   .index-ecommerce-sport-shoes main .ecommerce-sport-shoes__grid-slick .ecommerce-sport-shoes__grid-slick__title h4 {
@@ -207,7 +266,7 @@ footer.footer {
     margin: 0 auto;
     text-align: center; }
   .index-ecommerce-sport-shoes main .ecommerce-sport-shoes__grid-slick #grid-slick__grid button.slick-arrow:before {
-    color: #000000; }
+    color: var(--color-negro); }
   .index-ecommerce-sport-shoes main .ecommerce-sport-shoes__grid-slick #grid-slick__grid .slick-list.draggable .slick-track .grid-image {
     padding: 5px; }
     .index-ecommerce-sport-shoes main .ecommerce-sport-shoes__grid-slick #grid-slick__grid .slick-list.draggable .slick-track .grid-image img {
@@ -237,11 +296,11 @@ footer.footer {
 #mensajeDeStatus p.mensaje-de-status__usuario-no-existe, #mensajeDeStatus .mensaje-de-status__datos-incorrectos {
   padding: 5px;
   text-align: center;
-  color: red; }
+  color: var(--color-rojo); }
   #mensajeDeStatus p.mensaje-de-status__usuario-no-existe a, #mensajeDeStatus .mensaje-de-status__datos-incorrectos a {
     text-decoration: none; }
     #mensajeDeStatus p.mensaje-de-status__usuario-no-existe a strong, #mensajeDeStatus .mensaje-de-status__datos-incorrectos a strong {
-      color: black; }
+      color: var(--color-negro); }
 
 .container.ecommerce-sport-shoes__form-login {
   margin-bottom: 100px; }
@@ -285,28 +344,28 @@ footer.footer {
           .productos-ecommerce-sport-shoes main section.ecommerce-sport-shoes__products-grid .product-grid .product-image .product-button-link ul li i {
             font-size: 25px;
             padding: 10px 15px;
-            background-color: #ffffff;
+            background-color: var(--color-blanco);
             border-radius: 4px;
             margin: 10px; }
   .productos-ecommerce-sport-shoes main section.ecommerce-sport-shoes__products-grid .product-title a {
     text-decoration: none; }
     .productos-ecommerce-sport-shoes main section.ecommerce-sport-shoes__products-grid .product-title a h4 {
       font-size: 16px;
-      color: #000000; }
+      color: var(--color-negro); }
   .productos-ecommerce-sport-shoes main section.ecommerce-sport-shoes__products-grid .product-price {
     font-size: 18px;
     font-weight: 500; }
 
 button.btn.btn-primary.anadir-al-carrito {
-  background-color: #000000;
-  border: #000000;
+  background-color: var(--color-negro);
+  border: var(--color-negro);
   border-radius: 0px;
   font-size: 18px;
   width: 100%; }
   button.btn.btn-primary.anadir-al-carrito:hover {
-    background-color: #ffffff;
-    color: #000000;
-    outline: 1px solid #000000;
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+    outline: 1px solid var(--color-negro);
     transition: all 0.5s; }
 
 .login-ecommerce-sport-shoes .container.ecommerce-sport-shoes__form-login__ckeck .mb-3 .content-edit-date {
@@ -332,7 +391,7 @@ img.image-carrito {
     opacity: 1; }
 
 .toastify.on.mensaje-se-elimino-exitosamente.toastify-right.toastify-top {
-  background: red; }
+  background: var(--color-rojo); }
   .toastify.on.mensaje-se-elimino-exitosamente.toastify-right.toastify-top span.toast-close {
     padding-left: 25px;
     color: white !important;
